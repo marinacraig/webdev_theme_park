@@ -26,3 +26,6 @@ merge branches:
 ```
 git merge develop
 ```
+
+## licences
+footer: [social media icons](https://iconmonstr.com/license/)
