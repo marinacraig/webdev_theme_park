@@ -31,7 +31,7 @@ git merge develop
 footer: icons downloaded from iconmonstr.com [license](https://iconmonstr.com/license/)
 
 ## Responsibilities  
-HTML:
+**HTML**:
 
 Marlene: (head) header / nav
 
@@ -42,6 +42,11 @@ Tomas & Mathew: Main
 Maracena: Attraction
 
 Marc: Tickets
+
+**CSS**:
+Font
+Colors
+Grid
 
 
 ## documentation / team assignments  
