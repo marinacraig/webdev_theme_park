@@ -32,10 +32,15 @@ footer: icons downloaded from iconmonstr.com [license](https://iconmonstr.com/li
 
 ## Responsibilities  
 HTML:
+
 Marlene: (head) header / nav
+
 Marina: Footer
+
 Tomas & Mathew: Main
+
 Maracena: Attraction
+
 Marc: Tickets
 
 
