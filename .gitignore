@@ -5,8 +5,6 @@ Thumbs.db
 /node_modules
 /dist
 git
-/wireframes_europapark
-.zip
-*.zip
-
+/marina
+/**/.zip
 
