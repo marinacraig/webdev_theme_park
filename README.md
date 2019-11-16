@@ -33,9 +33,9 @@ footer: icons downloaded from iconmonstr.com [license](https://iconmonstr.com/li
 ## Responsibilities  
 **HTML**:
 
-Marlene: (head) header / nav
+Marlene: header / nav
 
-Marina: Footer
+Marina: head, Footer
 
 Tomas & Mathew: Main
 
@@ -44,9 +44,16 @@ Maracena: Attraction
 Marc: Tickets
 
 **CSS**:
-Font
-Colors
-Grid
+Font  
+Colors  
+Grid 
+
+## URL on static page  
+[https://hub.coursera-apps.org/connect/sharedxuypagzs](https://hub.coursera-apps.org/connect/sharedxuypagzs)
+
+place to change content of the pages:
+
+[https://www.coursera.org/learn/uol-web-development/workspace/XUirG/static-web-pages](https://www.coursera.org/learn/uol-web-development/workspace/XUirG/static-web-pages)
 
 
 ## documentation / team assignments  
