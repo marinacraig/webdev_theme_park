@@ -16,32 +16,58 @@
 <body>
 
 <nav>
-
+        <div>
+                <img src="../assets/logo.svg" alt="logo" width="100">
+        </div>
+            
+    <ul>
+        
+        <li><img src="../assets/iconmonstr-time-3.svg" alt="clock">daily open from 9am till 6pm</li>
+        <li><img src="../assets/iconmonstr-weather-8.svg" alt="weather">weather sunny</li>
+        <li>attractions
+        <ul>
+                <li><a href="attraction.html">attraction1</a></li>
+                <li><a href="attraction.html">attraction2</a></li>
+                <li><a href="attraction.html">attraction3</a></li>
+        </ul>
+        </li>
+    
+        <li><a href="#">hotels</a></li>
+        <li><a href="#">events</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="tickets.html">buy tickets</a></li>
+        <!--Todo: Replace with a form? We'll not make it work in this project-->
+        <li><img src="iconmonstr-magnifier-4.svg" alt="search">search</li>
+        <!--Todo: Replace with language image?-->
+        <li><a href="#"></a>ENG</li>
+    </ul>
 </nav>
 
 <main>
-<h2>Category</h2>
-    <ul>
-        <li>General Admission</li>
 
-            Tickets
+    <form>
+        <h2>Category</h2>
+        <h3>General Admission</h3>
+    
+         <p>Tickets</p>   
             <input class="input-group-field" type="number" name="quantity" value="0">
 
-        <li>Member Tickets</li>
+        <h3>Member Tickets</h3>
 
-            Tickets
+            <p>Tickets</p>
             <input class="input-group-field" type="number" name="quantity" value="0">
 
-        <li>Multi-Day</li>
+        <h3>Multi-Day</h3>
 
-            Tickets
+            <p>Tickets</p>
             <input class="input-group-field" type="number" name="quantity" value="0">
 
-    </ul>
+    </form>
     <button>Continue</button>
         <br><br>
 
 <h2>Dates</h2>
+
     <label for="start">Select date:</label>
     <input type="date" id="start" name="trip-start"
        value="2019-11-15"
@@ -50,7 +76,7 @@
     <button>Back</button>
     <button>Continue</button>
         <br><br>
-
+   
 <h2>Add-Ons</h2>
     <ul><li>Restaurant coupons?</li>
         <li>Hotel stay?</li>
@@ -60,36 +86,41 @@
         <br><br>
 
 <h2>Check-Out</h2>
-    <form>
-        First name:<br>
+
+        <label for="firstname">First name:</label><br>
         <input type="text" name="firstname"><br>
-        Last name:<br>
+        <label for="lastname">Last name:</label><br>
         <input type="text" name="lastname"><br>
-        Address 1:<br>
+        
+        <label for="address">Address 1:</label><br>
         <input type="text" name="address"><br>
-        Address 2:<br>
-        <input type="text" name="address"><br>
-        Postal Code:<br>
+        <label for="address2">Address 2:</label><br>
+        <input type="text" name="address2"><br>
+
+        <label for="postal code">Postal Code:</label><br>
         <input type="number" name="postal code"><br>
-        Town:<br>
-        <input type="number" name="postal code"><br>
-        Country:<br>
+        <label for="town">Town:</label><br>
+        <input type="number" name="town"><br>
+
+        <label for="country">Country:</label><br>
         <input type="text" name="country"><br>
-        Phone number:<br>
+        <label for="phone number">Phone number:</label><br>
         <input type="text" name="phone number"><br><br>
-        Name on Credit Card:<br>
-        <input type="text" name="phone number"><br>
-        Credit Card Number:<br>
-        <input type="text" name="phone number"><br>
-        Expiration Date:<br>
-        <input type="text" name="phone number"><br>
-        CVC Number:<br>
-        <input type="text" name="phone number"><br>
-    </form>
-            <br>
+
+        <label for="ccname">Name on Credit Card:</label><br>
+        <input type="text" name="ccname"><br>
+        <label for="ccnumber">Credit Card Number:</label><br>
+        <input type="text" name="ccnumber"><br>
+
+        <label for="expiration">Expiration Date:</label><br>
+        <input type="text" name="expiration"><br>
+        <label for="cvcnumber"> CVC Number:</label><br>
+        <input type="text" name="cvcnumber"><br>
+
         <button>Back</button>
-        <button>Buy Ticket(s)</button>
-            <br><br><br>
+        <button type="submit">Buy Ticket(s)</button>
+    </form>
+
 </main>
 
 <footer>
