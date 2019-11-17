@@ -37,15 +37,11 @@ fonts:
 ## Responsibilities  
 **HTML**:
 
-Marlene: Header / Navigation
-
-Marina: Head, Footer
-
-Tomas & Mathew: Main
-
-Maracena: Attraction
-
-Marc: Tickets
+Marlene: Header / Navigation  
+Marina: Head, Footer  
+Tomas & Mathew: Main  
+Maracena: Attraction  
+Marc: Tickets  
 
 **CSS**:
 Font  
@@ -54,14 +50,12 @@ Grid
 
 **Others**  
 PDF Documentation incl. wireframes  
-
 wireframes upated  
 
 ## URL on static page  
 [https://hub.coursera-apps.org/connect/sharedhvbzntqc](https://hub.coursera-apps.org/connect/sharedhvbzntqc)
 
-place to change content of the pages:
-
+place to change content of the pages:  
 [https://www.coursera.org/learn/uol-web-development/workspace/nik3x/static-web-pages](https://www.coursera.org/learn/uol-web-development/workspace/nik3x/static-web-pages)
 
 
