@@ -57,7 +57,7 @@ footer a:visited {
 
 .impressum {
     text-align: center;
-
+    padding-top: 10px;
 }
 
 @media screen and (min-width: 641px) {
