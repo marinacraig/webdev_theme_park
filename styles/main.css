@@ -8,36 +8,40 @@ body{
     clear:both;
 }
 /*header, nav*/
-.disturber, .button {
-    background: pink;
+.nav-list-item.disturber a {
     color: darkblue;
 }
-
 /*same CSS for header and footer*/
 header, footer{
     background: purple;
 }
 
-.footer-list-item {
+.nav-list-item, .footer-list-item {
     list-style-type: none;
 }
-.footer-list-item a {
+.nav-list-item a, .footer-list-item a {
     text-decoration: none;
     color: pink
 }
+.nav-list, .footer-list{
+    margin: 0;
+    padding: 0;
+}
 
+/*nav and main*/
+.disturber, .button {
+    background: pink;
+}
 
 
 /*main*/
-
+.button{
+    color: darkblue;
+}
 
 /*footer*/
 footer {
     text-align: center;
-}
-.footer-list{
-    margin: 0;
-    padding: 0;
 }
 
 footer a:hover {
