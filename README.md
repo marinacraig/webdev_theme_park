@@ -32,7 +32,9 @@ pictures:
 
 footer: icons downloaded from iconmonstr.com [license](https://iconmonstr.com/license/)
 
-fonts: 
+fonts:  
+titles: [https://fonts.google.com/specimen/Righteous](https://fonts.google.com/specimen/Righteous)  
+text: [https://fonts.google.com/specimen/ZCOOL+XiaoWei](https://fonts.google.com/specimen/ZCOOL+XiaoWei)  
 
 ## Responsibilities  
 **HTML**:
@@ -43,14 +45,14 @@ Tomas & Mathew: Main
 Maracena: Attraction  
 Marc: Tickets  
 
-**CSS**:
-Font  
-Colors  
+**CSS**:  
+Font: reseach - Marina, add to CSS - Marlene   
+Colors: research - Maca, placeholders - Marina, finals - team 
 Grid 
 
 **Others**  
-PDF Documentation incl. wireframes  
-wireframes upated  
+PDF Documentation incl. wireframes - Mathew  
+wireframes upated - Marlene   
 
 ## URL on static page  
 [https://hub.coursera-apps.org/connect/sharedhvbzntqc](https://hub.coursera-apps.org/connect/sharedhvbzntqc)
