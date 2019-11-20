@@ -2,13 +2,15 @@ body{
     background: darkblue;
     width: 100vw;
     min-height: 100vh;
+    color: pink
 }
 .clearfix {
     clear:both;
 }
-/*header including nav*/
+/*header, nav*/
 .disturber, .button {
     background: pink;
+    color: darkblue;
 }
 
 /*same CSS for header and footer*/
@@ -21,7 +23,9 @@ header, footer{
 }
 .footer-list-item a {
     text-decoration: none;
+    color: pink
 }
+
 
 
 /*main*/
