@@ -25,32 +25,32 @@
 <body>
 <!--header section with nav-->
 <header>
-    <nav>
-        <div>
-            <a href="../index.html"><img src="../assets/logo.svg" alt="logo" width="100" class="logo"></a>
-        </div>
-            
-    <ul>
-        
-        <li><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">daily open from 9am till 6pm</li>
-        <li><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
-        <li>attractions
+        <nav>
+            <div>
+                <a href="../index.html"><img src="../assets/logo.svg" alt="logo" width="100" class="logo"></a>
+            </div>
+                
         <ul>
-                <li><a href="attraction.html">attraction1</a></li>
-                <li><a href="attraction.html">attraction2</a></li>
-                <li><a href="attraction.html">attraction3</a></li>
+            
+            <li class="nav-list-item"><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">daily open from 9am till 6pm</li>
+            <li class="nav-list-item"><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
+            <li class="nav-list-item">attractions
+            <ul>
+                    <li class="nav-list-item"><a href="attraction.html">attraction1</a></li>
+                    <li class="nav-list-item"><a href="attraction.html">attraction2</a></li>
+                    <li class="nav-list-item"><a href="attraction.html">attraction3</a></li>
+            </ul>
+            </li>
+        
+            <li class="nav-list-item"><a href="#">hotels</a></li>
+            <li class="nav-list-item"><a href="#">events</a></li>
+            <li class="nav-list-item"><a href="#">shop</a></li>
+            <li class="nav-list-item disturber"><a href="tickets.html">buy tickets</a></li>
+            <!--Todo: Replace with a form? We'll not make it work in this project-->
+            <li class="nav-list-item"><img src="../assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</li>
+            <li class="nav-list-item"><img src="../assets/united-kingdom-flag-icon-64.png" alt="eng"></li>
         </ul>
-        </li>
-    
-        <li><a href="#">hotels</a></li>
-        <li><a href="#">events</a></li>
-        <li><a href="#">shop</a></li>
-        <li><a href="tickets.html">buy tickets</a></li>
-        <!--Todo: Replace with a form? We'll not make it work in this project-->
-        <li><img src="../assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</li>
-        <li><img src="../assets/united-kingdom-flag-icon-64.png" alt="eng"></li>
-    </ul>
-    </nav>
+     </nav>
 </header>
 
 
@@ -117,45 +117,49 @@
 
 <!--footer section with nav parts, about us, social media-->
 <footer>
-    <!-- Todo: check links of nav and icons -->
-    <div>
-        <a href="../index.html">
-            <img src="../assets/logo.svg" alt="logo" width="100">
-        </a>
-    </div>
+        <!-- Todo: check links of nav and icons -->
+        <div>
+            <a href="../index.html">
+                <img src="../assets/logo.svg" alt="logo" width="100" class="logo">
+            </a>
+        </div>
 
-    <div>
-        <!--content of navigation-->
-        <p>space park:</p>
-        <ul>
-            <li><a href="../index.html">overview</a></li>
-            <li><a href="tickets.html">tickets</a></li>
-            <li><img src="../assets/iconmonstr-weather-8.svg" alt="weather">weather sunny</li>
-            <li><img src="../assets/iconmonstr-time-3.svg" alt="clock">daily open from 9am till 6pm</li>
+        <div class="footer-section">
+            <!--content of navigation-->
+            <p>space park:</p>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="../index.html">overview</a></li>
+                <li class="footer-list-item"><a href="tickets.html">tickets</a></li>
+                <li class="footer-list-item"><img src="../assets/iconmonstr-weather-8.svg" alt="weather">weather sunny</li>
+                <li class="footer-list-item"> <img src="../assets/iconmonstr-time-3.svg" alt="clock">daily open from 9am till 6pm</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <p>about us:</p>
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#">company</a></li>
+                <li class="footer-list-item"><a href="#">career</a></li>
+                <li class="footer-list-item"><a href="#">support & contact</a></li>
+            </ul>
+        </div>
+
+        <!-- socialmedia icons for facebook, insta, twitter, youtube-->
+        <div class="footer-section">
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-facebook-4.svg" alt="facebook" class="icon"></a></li>
+                <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-instagram-14.svg" alt="instagram" class="icon"></a></li>
+                <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-twitter-4.svg" alt="twitter" class="icon"></a></li>
+                <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-youtube-9.svg" alt="youtube" class="icon"></a></li>
         </ul>
-    </div>
-    
-    <div>
-        <p>about us:</p>
-        <ul>
-            <li><a href="#">company</a></li>
-            <li><a href="#">career</a></li>
-            <li><a href="#">support & contact</a></li>
-        </ul>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="impressum">
+                <p>
+            <address>Space Park, parkavenue 345, F-4098 Lyon</address>
+            &copy; Team 17 (Tutor Group 2)</p>
+        </div>
 
-    <!-- socialmedia icons for facebook, insta, twitter, youtube-->
-    <div>
-        <a href="#"><img src="../assets/iconmonstr-facebook-4.svg" alt="facebook" class="icon"></a>
-        <a href="#"><img src="../assets/iconmonstr-instagram-14.svg" alt="instagram" class="icon"></a>
-        <a href="#"><img src="../assets/iconmonstr-twitter-4.svg" alt="twitter" class="icon"></a>
-        <a href="#"><img src="../assets/iconmonstr-youtube-9.svg" alt="youtube" class="icon"></a>
-    </div>
-    <div>
-        <address>Space Park, parkavenue 345, F-4098 Lyon</address>
-        <p>&copy; Team 17 (Tutor Group 2)</p>
-    </div>
-
-</footer>
+    </footer>
 </body>
 </html>

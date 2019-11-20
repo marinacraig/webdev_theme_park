@@ -1,0 +1,58 @@
+body{
+    background: darkblue;
+    width: 100vw;
+    min-height: 100vh;
+}
+.clearfix {
+    clear:both;
+}
+/*header including nav*/
+.disturber, .button {
+    background: pink;
+}
+
+/*same CSS for header and footer*/
+header, footer{
+    background: purple;
+}
+
+.footer-list-item {
+    list-style-type: none;
+}
+.footer-list-item a {
+    text-decoration: none;
+}
+
+
+/*main*/
+
+
+/*footer*/
+footer {
+    text-align: center;
+}
+.footer-list{
+    margin: 0;
+    padding: 0;
+}
+
+footer a:hover {
+    color: pink;
+}
+
+footer a:visited {
+    color: yellow;
+}
+
+.impressum {
+    text-align: center;
+}
+
+@media screen and (min-width: 641px) {
+
+    .footer-section {
+        display: inline-block;
+        float: left;
+        width: 33%;
+    }
+}
