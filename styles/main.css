@@ -103,7 +103,9 @@ header, .impressum{
 .second-section, form {
     background-color: #1D0D2D;
 }
-
+.tickets {
+padding: 1em;
+}
 form {
     color: #FFF;
 }
