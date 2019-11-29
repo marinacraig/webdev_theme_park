@@ -1,3 +1,7 @@
+/*Custom Fonts----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+
 body {
     background: darkblue;
     width: 100vw;
@@ -6,9 +10,31 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .clearfix {
     clear:both;
 }
+
+h2{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 2em;
+    color: pink;
+}
+
+
+p{
+    font-family: 'ZCOOL XiaoWei', 'Open Sans', serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: pink;
+}
+
+
 /*header, nav*/
 .nav-list-item.disturber a {
     color: darkblue;
@@ -18,17 +44,27 @@ header, footer{
     background: purple;
 }
 
+
 .nav-list-item, .footer-list-item {
     list-style-type: none;
 }
 .nav-list-item a, .footer-list-item a {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1em;
     text-decoration: none;
-    color: pink
+    color: pink;
+    display:inline-block;
 }
+
 .nav-list, .footer-list{
     margin: 0;
     padding: 0;
 }
+
+    
 
 /*nav and main*/
 .disturber, .button {
@@ -68,3 +104,6 @@ footer a:visited {
         width: 33%;
     }
 }
+
+
+
