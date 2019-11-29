@@ -77,13 +77,12 @@ footer a:visited {
 
 .impressum {
     text-align: center;
-    padding: 10px 0 20px;
+    padding: 10px 0 10px;
 }
 
 @media screen and (min-width: 641px) {
 
     .footer-section {
-        display: inline-flexbox;
         float: left;
         width: 33%;
     }
