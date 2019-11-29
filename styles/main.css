@@ -2,43 +2,47 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
 
+html{
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 14px;
+}
 body {
-    background: darkblue;
     width: 100vw;
     min-height: 100vh;
     color: black;
     margin: 0;
     padding: 0;
+
 }
 
 .clearfix {
     clear:both;
 }
-
-h2{
+h1,h2,h3 {
     font-family: 'Righteous', cursive;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 2em;
-    color: pink;
 }
-
-
-p{
-    font-family: 'ZCOOL XiaoWei', 'Open Sans', serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 15px;
-    color: pink;
+h1 {
+    font-size:2em;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.3em;
 }
 
 
 /*header, nav*/
+header{
+    font-size: 1.3em;
+}
+.nav-sublist-item{
+    font-size: 0.9em;
+}
 .nav-list-item.disturber a {
     color: #fff;
 }
+
 /*same CSS for header and footer*/
 header, .impressum{
     background: #B0B0AF;
@@ -46,10 +50,6 @@ header, .impressum{
 
 
 .nav-list-item, .footer-list-item {
-    font-size: 1em;
-    font-style: normal;
-    font-variant: normal;
-    font-family: 'ZCOOL XiaoWei', serif;
     list-style-type: none;
     font-weight: bolder;
 }
@@ -117,6 +117,9 @@ footer a:visited {
 
 
 @media screen and (min-width: 641px) {
+    body {
+        font-size: 16px;
+    }
 
     .footer-section {
         float: left;
