@@ -32,7 +32,7 @@ pictures:
 
 footer: icons downloaded from iconmonstr.com [license](https://iconmonstr.com/license/)
 
-fonts:  
+fonts:   
 titles: [https://fonts.google.com/specimen/Righteous](https://fonts.google.com/specimen/Righteous)  
 text: [https://fonts.google.com/specimen/ZCOOL+XiaoWei](https://fonts.google.com/specimen/ZCOOL+XiaoWei)  
 
@@ -42,17 +42,23 @@ text: [https://fonts.google.com/specimen/ZCOOL+XiaoWei](https://fonts.google.com
 Marlene: Header / Navigation  
 Marina: Head, Footer  
 Tomas & Mathew: Main  
-Maracena: Attraction  
+Macarena: Attraction  
 Marc: Tickets  
 
 **CSS**:  
-Font: reseach - Marina, add to CSS - Marlene   
-Colors: research - Maca, placeholders - Marina, finals - team 
-Grid 
+Font: 
+- Marina: reseach  
+- Marlene: add to CSS    
+Colors:  
+- Maca: research    
+- Marina: placeholders    
+- Team: finals / own parts   
+Grid: each person for his / her own part   
 
 **Others**  
-PDF Documentation incl. wireframes - Mathew  
-wireframes upated - Marlene   
+Mathew: PDF Documentation incl. wireframes  
+Marlene: wireframes upated     
+Maca: mock-up  
 
 ## URL on static page  
 [https://hub.coursera-apps.org/connect/sharedhvbzntqc](https://hub.coursera-apps.org/connect/sharedhvbzntqc)
