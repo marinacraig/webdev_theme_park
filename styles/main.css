@@ -9,7 +9,7 @@ html{
 body {
     width: 100vw;
     min-height: 100vh;
-    color: black;
+    color: #FFF;
     margin: 0;
     padding: 0;
 
@@ -35,6 +35,7 @@ h3{
 /*header, nav*/
 header{
     font-size: 1.3em;
+    color: black;
 }
 .nav-sublist-item{
     font-size: 0.9em;
@@ -91,11 +92,16 @@ header, .impressum{
 form {
     color: #FFF;
 }
+/*attraction - color to be deleted when clear where what*/
+.attraction {
+    color: black;
+}
 /*footer*/
 footer {
     text-align: center;
     padding-top: 20px;
     background-color: #FFF;
+    color: black;
 }
 
 footer a:hover {
