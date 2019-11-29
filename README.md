@@ -49,16 +49,19 @@ Marc: Tickets
 Font: 
 - Marina: reseach  
 - Marlene: add to CSS    
+
 Colors:  
 - Maca: research    
 - Marina: placeholders    
 - Team: finals / own parts   
+
 Grid: each person for his / her own part   
 
 **Others**  
 Mathew: PDF Documentation incl. wireframes  
 Marlene: wireframes upated     
 Maca: mock-up  
+Marina: logo  
 
 ## URL on static page  
 [https://hub.coursera-apps.org/connect/sharedhvbzntqc](https://hub.coursera-apps.org/connect/sharedhvbzntqc)
