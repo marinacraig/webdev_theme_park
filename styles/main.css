@@ -82,7 +82,7 @@ header, .impressum{
     color: #fff;
 }
 
-.disturber {
+.disturber, .disturber.button {
     background: #1C6AC6;
 }
 
@@ -90,8 +90,14 @@ header, .impressum{
 .button{
     background-color: #BD92DD;
     color: #fff;
+    width: 150px;
+    height: 30px;
+    text-align: center;
 }
-
+.test {
+    min-width: 100%;
+    min-height: 100%;
+}
 .first-section {
     background-image: url(../assets/tileable_space.jpg);
 }
