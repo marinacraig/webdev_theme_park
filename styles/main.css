@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
 
 body {
-    background: darkblue;
     width: 100vw;
     min-height: 100vh;
-    color: pink;
+    color: black;
     margin: 0;
     padding: 0;
+    opacity:100%;
 }
 
 .clearfix {
@@ -37,11 +37,11 @@ p{
 
 /*header, nav*/
 .nav-list-item.disturber a {
-    color: darkblue;
+    color: #fff;
 }
 /*same CSS for header and footer*/
-header, footer{
-    background: purple;
+header, .impressum{
+    background: #B0B0AF;
 }
 
 
@@ -57,7 +57,6 @@ header, footer{
     text-decoration: none;
     color: pink;
     display:inline-block;
-}
 
 .nav-list, .footer-list{
     margin: 0;
@@ -67,39 +66,58 @@ header, footer{
     
 
 /*nav and main*/
-.disturber, .button {
-    background: pink;
+.button a, .disturber a {
+    text-decoration: none;
+    color: #fff;
 }
 
+.disturber {
+    background: #1C6AC6;
+}
 
 /*main*/
-.button{
-    color: darkblue;
+.button {
+    background-color: #BD92DD;
+    color: #fff;
 }
 
+.first-section {
+    background-image: url(../assets/cosmos-landing-page.png);
+}
+.second-section, form {
+    background-color: #1D0D2D;
+}
+
+form {
+    color: #FFF;
+}
 /*footer*/
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
+    background-color: #FFF;
 }
 
 footer a:hover {
-    color: pink;
+    color: #1C6AC6;
 }
 
 footer a:visited {
-    color: yellow;
+    color: #BD92DD;
+}
+
+.footer-section{
+    padding-bottom: 15px;
 }
 
 .impressum {
     text-align: center;
-
+    padding: 10px 0 10px;
 }
 
 @media screen and (min-width: 641px) {
 
     .footer-section {
-        display: inline-block;
         float: left;
         width: 33%;
     }
