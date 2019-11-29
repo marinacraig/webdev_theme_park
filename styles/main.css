@@ -102,13 +102,20 @@ header, .impressum{
     background-image: url(../assets/tileable_space.jpg);
 }
 
-.main-body {
-   /* padding-left: 20px;
-    padding-right: 20px; */
-}
+
 .second-section, form {
     background-color: #1D0D2D;
 }
+/*index page*/
+
+
+/*attraction page*/
+.attraction {
+    /* padding-left: 20px;
+     padding-right: 20px; */
+ }
+
+/*ticket page*/
 .tickets {
 padding: 1em;
 }
