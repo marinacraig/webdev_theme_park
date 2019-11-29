@@ -56,63 +56,75 @@
 
 <!--main area of the page-->
 <main>
-   
-     <!-- This will be a slideshow once we can use CSS and Javascript-->
-    <div >
-        <img src="../assets/Atractions/longrollercoaster.jpg" alt="image example">
-            
-    </div>
-    <br>
-
-     <!-- Main Atraction -->
-     <div>
-        <!-- <h3>Space Roundabout</h3>-->
-        <h2>The Solar System Expedition</h2>
-        <img src="../assets/Atractions/Spaceship_roundabout.jpg" style="width:50%" alt="image example">
-        <p>
-            There is no shortage of admirers and thrill seekers for our
-            most popular attraction, the Solar System Expedition,
-            due to its roller coaster resembling ride, which takes
-            the riders through a close to realitic journey from one end
-            to the other end of the the Solar System, with fun facts about
-            the whole Solar System and its planets whilst passing by each,
-            planet like structures.
-        </p>
-     </div>
-
-     <!-- Should be to the right of Main Atraction, CSS needed -->
-     <aside>
+       
+         <!-- This will be a slideshow once we can use CSS and Javascript-->
+    <div class="first-section main-body">
+        <div class="second-section">
+            <img src="../assets/Atractions/longrollercoaster.jpg" alt="image example">
+                
+        </div>
         <br>
-         <h2>Tiket Info</h2>
-         <p>Monday - Thursday</p>
-         <p>100</p>
-         <p>Friday - Sunday</p>
-         <p>150</p>
-         <p class="disturber"><a href="../content/tickets.html">Book Now</a></p>
-     </aside>
 
-     <!-- Gallery -->
-     <div>
-         <h2>Photo Gallery</h2>
-         <img src="../assets/Atractions/Roller-Coaster-kids.jpg" style="width:50%" alt="image example">
+         <!-- Main Atraction -->
+        <div class="row second-section" style="color: #fff">
+         <div class="column">
+            <!-- <h3>Space Roundabout</h3>-->
+            <h2>The Solar System Expedition</h2>
+            <img src="../assets/Atractions/Spaceship_roundabout.jpg" style="width:50%" alt="image example">
+            <p>
+                There is no shortage of admirers and thrill seekers for our
+                most popular attraction, the Solar System Expedition,
+                due to its roller coaster resembling ride, which takes
+                the riders through a close to realitic journey from one end
+                to the other end of the the Solar System, with fun facts about
+                the whole Solar System and its planets whilst passing by each,
+                planet like structures.
+            </p>
+         </div>
+
+         <!-- Should be to the right of Main Atraction, CSS needed -->
+         <aside class="column">
+            <div style="padding-left: 20px">
+                <br>
+                 <h2>Tiket Info</h2>
+                 <p>Monday - Thursday</p>
+                 <p>100</p>
+                 <p>Friday - Sunday</p>
+                 <p>150</p>
+                 <button class="disturber"><a href="../content/tickets.html">Book Now</a></button>
+            </div>
+         </aside>
+        </div>
+        <br>
+        <br>
+        <br>
+         <!-- Gallery -->
+         <div class="row second-section" style="color: #fff">
+         <div class="column">
+             <h2>Photo Gallery</h2>
+             <img src="../assets/Atractions/Roller-Coaster-kids.jpg" style="width:50%" alt="image example">
+         </div>
+
+         <!-- Should be to the right of Gallery, also the list should interact with the image, probably database, CSS and Javascript needed.-->
+         <aside class="column">
+            <div style="padding-left: 20px">
+                 <br>
+                 <h2>Atracctions Like This One</h2>
+                 <ul>
+                 <li>Kids</li>
+                 <li>Roller Coaster</li>
+                 <li>Carousel</li>
+                 <li>Ferris Wheel</li>
+                </ul>
+                 <br>
+                 <button class="button"><a href="../index.html" >View all Attractions</a></button>
+                 <br>
+                 <br>
+             </div>
+         </aside>
      </div>
 
-     <!-- Should be to the right of Gallery, also the list should interact with the image, probably database, CSS and Javascript needed.-->
-     <aside>
-         <br>
-         <h2>Atracctions Like This One</h2>
-         <ul>
-         <li>Kids</li>
-         <li>Roller Coaster</li>
-         <li>Carousel</li>
-         <li>Ferris Wheel</li>
-        </ul>
-         <br>
-         <p class="button"><a href="../index.html" >View all Attractions</a>
-         </p>
-         <br>
-         <br>
-     </aside>
+    </div>
 </main>
 
 <!--footer section with nav parts, about us, social media-->
@@ -151,7 +163,7 @@
                 <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-instagram-14.svg" alt="instagram" class="icon"></a></li>
                 <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-twitter-4.svg" alt="twitter" class="icon"></a></li>
                 <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-youtube-9.svg" alt="youtube" class="icon"></a></li>
-        </ul>
+            </ul>
         </div>
         <div class="clearfix"></div>
         <div class="impressum">

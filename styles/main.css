@@ -63,7 +63,17 @@ header, .impressum{
     padding: 0;
 }
 
-    
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*nav and main*/
 .button a, .disturber a {
@@ -82,7 +92,12 @@ header, .impressum{
 }
 
 .first-section {
-    background-image: url(../assets/cosmos-landing-page.png);
+    background-image: url(../assets/tileable_space.jpg);
+}
+
+.main-body {
+   /* padding-left: 20px;
+    padding-right: 20px; */
 }
 .second-section, form {
     background-color: #1D0D2D;
