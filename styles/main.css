@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
 
+
+/*
+mobile first
+main settings 
+header 
+main (index, attraction, tickets)
+footer
+*/
+
 html{
     font-family: 'ZCOOL XiaoWei', serif;
     font-size: 14px;
@@ -14,10 +23,11 @@ body {
     padding: 0;
 
 }
-
+/*stop float */
 .clearfix {
     clear:both;
 }
+/*special font definition*/
 h1,h2,h3 {
     font-family: 'Righteous', cursive;
 }
@@ -64,18 +74,6 @@ header, .impressum{
     padding: 0;
 }
 
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /*nav and main*/
 .button a, .disturber a {
     text-decoration: none;
@@ -102,18 +100,32 @@ header, .impressum{
     background-image: url(../assets/tileable_space.jpg);
 }
 
-
 .second-section, form {
     background-color: #1D0D2D;
 }
 /*index page*/
-
+#main-page .second-section {
+    padding-top: 1rem;
+}
 
 /*attraction page*/
 .attraction {
     /* padding-left: 20px;
      padding-right: 20px; */
  }
+
+ .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 
 /*ticket page*/
 .tickets {
