@@ -66,6 +66,11 @@ header, .impressum{
     background: #B0B0AF;
 }
 
+a.nounderline:link
+{
+text-decoration:none;
+}
+
 
 .nav-list-item, .footer-list-item {
     list-style-type: none;
@@ -97,6 +102,8 @@ header, .impressum{
     width: 150px;
     height: 30px;
     text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 .linked-button {
     min-width: 100%;
