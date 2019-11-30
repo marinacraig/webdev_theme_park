@@ -76,7 +76,7 @@ header, .impressum{
     color: black
 }
 
-.nav-list, .footer-list{
+.nav-list, .footer-list {
     margin: 0;
     padding: 0;
 }
@@ -161,12 +161,29 @@ footer a:visited {
 .footer-section{
     padding-bottom: 15px;
 }
+.footer-section .logo{
+    width: 75%;
+}
+.footer-list-item.text {
+    padding-top: 10px;
+}
+.footer-section .icon {
+    padding: 0 10px;
+}
+.footer-section .socialmedia-icon{
+    width: 40px;
+    padding: 5px;
+}
 
+.footer-list .footer-list .footer-list-item{
+    display: inline;
+}
 .impressum {
     text-align: center;
     padding: 10px 0 10px;
 }
 address {
+    padding-top: 16px;
     font-style: normal;
 }
 
@@ -174,7 +191,6 @@ address {
     body {
         font-size: 16px;
     }
-
 
     .grid-container {
         display: grid;
@@ -188,8 +204,9 @@ address {
         grid-area: footer-grid;
     }
     .footer-section {
-        /* float: left;
-        width: 33%; */
-        
+        align-self: end;
+    }
+    .footer-section .logo{
+        width: 100%;
     }
 }
