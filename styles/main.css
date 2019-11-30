@@ -41,6 +41,13 @@ h3{
     font-size: 1.3em;
 }
 
+/*
+basic grid parts details check in fitting section parts
+pay attention: first mobile, below desktop -> because mobile 
+uses 1 column all grid definition are in the media section 
+below
+*/
+
 
 /*header, nav*/
 header{
@@ -168,8 +175,21 @@ address {
         font-size: 16px;
     }
 
+
+    .grid-container {
+        display: grid;
+        grid: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'footer-grid footer-grid footer-grid';
+    }
+
+    footer {
+        grid-area: footer-grid;
+    }
     .footer-section {
-        float: left;
-        width: 33%;
+        /* float: left;
+        width: 33%; */
+        
     }
 }
