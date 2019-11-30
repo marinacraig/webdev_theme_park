@@ -192,14 +192,13 @@ address {
         font-size: 16px;
     }
 
+    /*here are the grid definitions*/
     .grid-container {
         display: grid;
-        grid: auto auto auto;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
             'footer-grid footer-grid footer-grid';
     }
-
     footer {
         grid-area: footer-grid;
     }
