@@ -169,7 +169,7 @@ footer a:visited {
     padding-bottom: 15px;
 }
 .footer-section .logo{
-    width: 75%;
+    width: 50%;
 }
 .footer-list-item.text {
     padding-top: 10px;
@@ -212,7 +212,5 @@ address {
     .footer-section {
         align-self: end;
     }
-    .footer-section .logo{
-        width: 100%;
-    }
+
 }
