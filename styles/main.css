@@ -213,4 +213,12 @@ address {
         align-self: end;
     }
 
-}
+    /* ----------- index page ---------------- */ 
+    /* grid defintions */
+    .index-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:  "index-grid-ride1" "index-grid-ride2" "index-grid-ride3";
+    }
+
+}  /* end of @media screen and (min-width: 641px) */
