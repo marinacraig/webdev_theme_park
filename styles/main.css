@@ -124,6 +124,12 @@ text-decoration:none;
     padding-top: 1rem;
 }
 
+.index-slider-image, .grid-slider-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
 /*attraction page*/
 .attraction {
     /* padding-left: 20px;
