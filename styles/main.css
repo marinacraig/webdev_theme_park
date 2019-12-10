@@ -278,6 +278,7 @@ address {
     /* dispalys text on mouse hover */
     .grid-index-image:hover + .div-on-hoover {
         display: block;
+        pointer-events: none;
     }
     
     .button-on-hoover {
