@@ -32,6 +32,7 @@ body {
 /*special font definition*/
 h1,h2,h3 {
     font-family: 'Righteous', cursive;
+    text-align: center;
 }
 h1 {
     font-size:2em;
@@ -124,6 +125,32 @@ text-decoration:none;
     padding-top: 1rem;
 }
 
+.slider-div {
+    margin: auto;
+    padding: 4em;
+    justify-content: center;
+}
+
+.animation-div {
+    height: 450px;
+    padding: 4em;
+    -webkit-animation: animation 5s infinite;
+    animation: animation 5s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes animation {
+    0%      {background-image: url("/assets/landingpage-slider-image1.jpg"); }
+    50%     {background-image: url("/assets/landingpage-slider-image2.jpg"); }
+    100%    {background-image: url("/assets/landingpage-slider-image1.jpg"); }
+}
+
+@-webkit-keyframes animation {
+    0%      {background-image: url("/assets/landingpage-slider-image1.jpg"); }
+    50%     {background-image: url("/assets/landingpage-slider-image2.jpg"); }
+    100%    {background-image: url("/assets/landingpage-slider-image1.jpg"); }
+}
 
 
 /*attraction page*/
@@ -228,8 +255,7 @@ address {
 
     .index-grid-ride1, .index-grid-ride2, .index-grid-ride3 {width: 80%;}
 
-    .index-slider-image, .grid-index-image {
-        max-width: 100%;
+    .animation-div, .grid-index-image {
         height: auto;
         opacity: 0.8;
     
@@ -238,6 +264,8 @@ address {
         -moz-box-shadow: 10px 10px 20px -3px rgba(240,221,240,1);
         box-shadow: 10px 10px 20px -8px rgba(240,221,240,1);
     }
+
+    .grid-index-image {max-width: 100%;}
     
     .grid-index-image {
         /* curved corners */
@@ -248,11 +276,11 @@ address {
     }
     
     .grid-index-image:hover {
-        transition: 1s ease;
+        transition: .6s ease;
         opacity: 0.3;
     }
     
-    .index-slider-image {
+    .index-slider-image .animation-div{
         /* curved corners */
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
@@ -286,7 +314,7 @@ address {
     .grid-index-image:hover + .div-on-hoover {
         display: block;
         pointer-events: none;
-        transition: .6s ease;
+        transition: .3s ease;
     }
     
     .button-on-hoover {
@@ -295,7 +323,7 @@ address {
         border-radius: 5px;
         text-decoration: none;
         color: white;
-        transition: .6s ease;
+        transition: .3s ease;
     }
      
     /* button animation */
