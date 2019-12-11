@@ -63,6 +63,22 @@ header{
     color: #fff;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.nav-logo {
+   text-align: center;
+   padding-top: 20px;
+   background-color: #FFF;
+}
+.nav-logo .logo {
+    width: 50%;;
+}
+.language {
+    width: 50px;
+}
+
 /*same CSS for header and footer*/
 header, .impressum{
     background: #B0B0AF;
@@ -210,6 +226,25 @@ address {
         font-size: 16px;
     }
 
+    /*navigation*/
+    .hidden {
+        visibility: visible;
+    }
+    .nav-list{
+        height: 100px;
+    }
+    .nav-logo .logo {
+        max-width: 20%;;
+    }
+    .nav-list-item {
+        display: inline;
+        float: left;
+        padding: 15px;
+        max-width: 14%;
+    }
+    .nav-list-item .icon {
+        padding-right: 10px;
+    }
     /*here are the grid definitions*/
     .grid-container {
         display: grid;
