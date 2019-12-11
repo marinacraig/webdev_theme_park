@@ -419,6 +419,7 @@ address {
   
     footer {
         grid-area: footer-grid;
+        padding-top: 0px;
     }
     .footer-section {
         align-self: end;
