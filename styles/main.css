@@ -73,6 +73,10 @@ header{
 .language {
     width: 50px;
 }
+.nav-list-item:hover{
+    cursor: pointer;
+    height: 100%;
+}
 .nav-list-item:not(.hidden){
     padding: 5px 10px;
 }
@@ -247,7 +251,9 @@ address {
         display: inline;
         float: left;
         padding: 15px;
-        width: 12%;
+        min-width: 10%;
+        max-width: 14%;
+        
     }
     .nav-list-item .icon {
         padding-right: 10px;
