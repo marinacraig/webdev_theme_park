@@ -14,6 +14,8 @@ footer
 html{
     font-family: 'ZCOOL XiaoWei', serif;
     font-size: 14px;
+    overflow-x: hidden;
+    width: 100%;
 }
 body {
     width: 100vw;
@@ -116,6 +118,15 @@ header, .impressum{
     padding-top: 1rem;
 }
 
+.slider-div {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+aside {
+    padding: 4em;
+}
+
 /*attraction page*/
 a.nounderline:link
 {
@@ -213,4 +224,102 @@ address {
         align-self: end;
     }
 
-}
+    /* ----------- index page ---------------- */ 
+    /* grid defintions */
+    .index-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:  "index-grid-ride1" "index-grid-ride2" "index-grid-ride3";
+        justify-items: center;
+        padding-top: 2em;
+    }
+
+    .index-grid-ride1, .index-grid-ride2, .index-grid-ride3 {width: 80%;}
+
+    .index-slider-image, .grid-index-image {
+        max-width: 100%;
+        height: auto;
+        opacity: 0.8;
+    
+        /* border shadow */
+        -webkit-box-shadow: 10px 10px 20px -3px rgba(240,221,240,1);
+        -moz-box-shadow: 10px 10px 20px -3px rgba(240,221,240,1);
+        box-shadow: 10px 10px 20px -8px rgba(240,221,240,1);
+    }
+    
+    .grid-index-image {
+        /* curved corners */
+        border-radius: 40px 10px 10px 10px;
+        -moz-border-radius: 40px 10px 10px 10px;
+        -webkit-border-radius: 40px 10px 10px 10px;
+        
+    }
+    
+    .grid-index-image:hover {
+        transition: 1s ease;
+        opacity: 0.3;
+    }
+    
+    .index-slider-image {
+        /* curved corners */
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+    }
+    
+    .index-hover-parent {
+        position: relative;
+    }
+    
+    /* hiding div to be displayed on mouse hover */
+    .div-on-hoover {
+        display: none;
+        overflow: hidden;
+        width: 80%;
+        height: 100px;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        background-color: rgba(0, 0, 0, 0.486);
+        padding: 5px;
+        text-align: center;
+
+        /* shadow area to make the div blend in with the background */
+        -webkit-box-shadow: 10px 10px 75px 32px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 75px 32px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 75px 32px rgba(0,0,0,0.75);
+    }
+    
+    /* dispalys text on mouse hover */
+    .grid-index-image:hover + .div-on-hoover {
+        display: block;
+        pointer-events: none;
+        transition: .6s ease;
+    }
+    
+    .button-on-hoover {
+        background-color: rgb(78, 86, 134);
+        padding: .5em;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        transition: .6s ease;
+    }
+     
+    /* button animation */
+    .button:hover {
+        letter-spacing: 1px;
+        transition: .6s ease;
+    }
+
+    iframe {
+        width: 50%;
+        height: 450px;
+        border: 0;
+        justify-items: center;
+        padding-top: 3em;
+        padding-bottom: 4em;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}  /* end of @media screen and (min-width: 641px) */
