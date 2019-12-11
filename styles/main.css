@@ -124,7 +124,14 @@ text-decoration:none;
     padding-top: 1rem;
 }
 
+.slider-div {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
 
+aside {
+    padding: 4em;
+}
 
 /*attraction page*/
 .attraction {
@@ -224,6 +231,7 @@ address {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:  "index-grid-ride1" "index-grid-ride2" "index-grid-ride3";
         justify-items: center;
+        padding-top: 2em;
     }
 
     .index-grid-ride1, .index-grid-ride2, .index-grid-ride3 {width: 80%;}
@@ -302,5 +310,16 @@ address {
     .button:hover {
         letter-spacing: 1px;
         transition: .6s ease;
+    }
+
+    iframe {
+        width: 50%;
+        height: 450px;
+        border: 0;
+        justify-items: center;
+        padding-top: 3em;
+        padding-bottom: 4em;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 }  /* end of @media screen and (min-width: 641px) */
