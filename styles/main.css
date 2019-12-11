@@ -66,12 +66,6 @@ header, .impressum{
     background: #B0B0AF;
 }
 
-a.nounderline:link
-{
-text-decoration:none;
-}
-
-
 .nav-list-item, .footer-list-item {
     list-style-type: none;
     font-weight: bolder;
@@ -123,6 +117,12 @@ text-decoration:none;
 }
 
 /*attraction page*/
+a.nounderline:link
+{
+text-decoration:none;
+}
+
+
 .attraction {
     /* padding-left: 20px;
      padding-right: 20px; */
