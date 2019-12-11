@@ -56,15 +56,10 @@ header{
     font-size: 1.3em;
     color: black;
 }
-.nav-sublist-item{
-    font-size: 0.9em;
-}
-.nav-list-item.disturber a {
-    color: #fff;
-}
 
 .hidden {
     visibility: hidden;
+    height: 0;
 }
 
 .nav-logo {
@@ -78,6 +73,17 @@ header{
 .language {
     width: 50px;
 }
+.nav-list-item:not(.hidden){
+    padding: 5px 10px;
+}
+.nav-sublist-item{
+    font-size: 0.9em;
+}
+
+.nav-list-item.disturber a {
+    color: #fff;
+}
+
 
 /*same CSS for header and footer*/
 header, .impressum{
@@ -236,28 +242,23 @@ address {
     .nav-logo .logo {
         max-width: 20%;;
     }
+
     .nav-list-item {
         display: inline;
         float: left;
         padding: 15px;
-        max-width: 14%;
+        width: 12%;
     }
     .nav-list-item .icon {
         padding-right: 10px;
     }
+    /*define blue background in nav*/
+    .nav-list-item.disturber {
+        height: 90%;
+    }
+    
+
     /*here are the grid definitions*/
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-            'footer-grid footer-grid footer-grid';
-    }
-    footer {
-        grid-area: footer-grid;
-    }
-    .footer-section {
-        align-self: end;
-    }
 
     /* ----------- index page ---------------- */ 
     /* grid defintions */
@@ -357,4 +358,20 @@ address {
         margin-left: 25%;
         margin-right: 25%;
     }
+
+    /*footer*/
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'footer-grid footer-grid footer-grid';
+    }
+    footer {
+        grid-area: footer-grid;
+    }
+    .footer-section {
+        align-self: end;
+    }
+
 }  /* end of @media screen and (min-width: 641px) */
