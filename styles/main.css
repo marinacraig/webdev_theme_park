@@ -69,7 +69,7 @@ header{
 .nav-logo {
    text-align: center;
    padding-top: 20px;
-   background-color: #FFF;
+   /*   background-color: #FFF; makes it too flashy?*/
 }
 .nav-logo .logo {
     width: 50%;;
@@ -303,7 +303,7 @@ address {
 
 
     /* ----------- index page ---------------- */ 
-    /* grid defintions .index-grid-container*/
+    /* grid defintions */
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -314,7 +314,9 @@ address {
         padding-top: 2em;
     }
 
-    .index-grid-ride1, .index-grid-ride2, .index-grid-ride3 {width: 80%;}
+    .index-grid-ride1, .index-grid-ride2, .index-grid-ride3 {
+        width: 80%;
+    }
 
     .index-slider-image, .grid-index-image {
         max-width: 100%;
