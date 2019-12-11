@@ -300,25 +300,16 @@ address {
     }
 
     /*here are the grid definitions*/
+
+
+    /* ----------- index page ---------------- */ 
+    /* grid defintions .index-grid-container*/
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:  
+            "index-grid-ride1" "index-grid-ride2" "index-grid-ride3",
             'footer-grid footer-grid footer-grid';
-    }
-    footer {
-        grid-area: footer-grid;
-    }
-    .footer-section {
-        align-self: end;
-    }
-
-    /* ----------- index page ---------------- */ 
-    /* grid defintions */
-    .index-grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:  "index-grid-ride1" "index-grid-ride2" "index-grid-ride3";
         justify-items: center;
         padding-top: 2em;
     }
@@ -420,5 +411,14 @@ address {
         padding-bottom: 4em;
         margin-left: 25%;
         margin-right: 25%;
+    }
+
+    /*footer*/
+  
+    footer {
+        grid-area: footer-grid;
+    }
+    .footer-section {
+        align-self: end;
     }
 }  /* end of @media screen and (min-width: 641px) */
