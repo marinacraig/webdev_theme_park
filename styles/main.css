@@ -74,6 +74,9 @@ header{
 .nav-logo .logo {
     width: 50%;;
 }
+.nav-list-item .icon {
+    padding-right: 10px;
+}
 .language {
     width: 50px;
 }
@@ -295,9 +298,7 @@ address {
         min-width: 9%;
         max-height: 70px;
     }
-    .nav-list-item .icon {
-        padding-right: 10px;
-    }
+
     /*here are the grid definitions*/
     .grid-container {
         display: grid;
