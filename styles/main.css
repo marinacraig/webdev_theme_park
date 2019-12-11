@@ -308,7 +308,7 @@ address {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:  
-            "index-grid-ride1" "index-grid-ride2" "index-grid-ride3",
+            'index-grid-ride1 index-grid-ride2 index-grid-ride3',
             'footer-grid footer-grid footer-grid';
         justify-items: center;
         padding-top: 2em;
