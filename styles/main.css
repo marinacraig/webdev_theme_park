@@ -182,6 +182,7 @@ header, .impressum{
 
 .second-section, form {
     background-color: #1D0D2D;
+    padding: 10px;
 }
 /*index page*/
 #main-page .second-section {
@@ -212,6 +213,7 @@ text-decoration:none;
  .column {
     float: left;
     width: 50%;
+    padding-left: 20px
   }
   
   /* Clear floats after the columns */
@@ -353,6 +355,10 @@ address {
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
         -webkit-border-radius: 10px 10px 10px 10px;
+        
+        margin-left:auto;
+        margin-right:auto; 
+        display:block;
     }
     
     .index-hover-parent {
