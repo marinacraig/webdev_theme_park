@@ -32,6 +32,7 @@ body {
 /*special font definition*/
 h1,h2,h3 {
     font-family: 'Righteous', cursive;
+    text-align: center;
 }
 h1 {
     font-size:2em;
@@ -190,6 +191,13 @@ header, .impressum{
     padding-top: 1rem;
 }
 
+.grid-index-image {
+    /* curved corners */
+    border-radius: 40px 10px 10px 10px;
+    -moz-border-radius: 40px 10px 10px 10px;
+    -webkit-border-radius: 40px 10px 10px 10px;
+}
+
 .slider-div {
     padding-top: 4em;
     padding-bottom: 4em;
@@ -197,6 +205,9 @@ header, .impressum{
 
 aside {
     padding: 4em;
+    margin-left:auto;
+    margin-right:auto; 
+    display:flex;
 }
 
 /*attraction page*/
@@ -278,6 +289,33 @@ address {
     font-style: normal;
 }
 
+@media screen and (max-width: 640px) {
+
+    .index-slider-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-index-image {
+        width: 80%;
+        height: auto;
+        margin: auto 0;
+        margin-left:auto;
+        margin-right:auto; 
+        display:block;
+    }
+
+    .grid-index-image, .index-slider-image {
+        opacity: 0.8;
+    }
+
+    .index-grid-ride {
+        margin-top: 4em;
+        text-align: center;
+    }
+
+}
+
 @media screen and (min-width: 641px) {
     body {
         font-size: 16px;
@@ -296,7 +334,6 @@ address {
     }
     .nav-list-item {
         display: inline;
-        float: left;
         padding: 15px;
         max-width: 13%;
         min-width: 9%;
@@ -340,14 +377,6 @@ address {
         -webkit-box-shadow: 10px 10px 20px -3px rgba(240,221,240,1);
         -moz-box-shadow: 10px 10px 20px -3px rgba(240,221,240,1);
         box-shadow: 10px 10px 20px -8px rgba(240,221,240,1);
-    }
-    
-    .grid-index-image {
-        /* curved corners */
-        border-radius: 40px 10px 10px 10px;
-        -moz-border-radius: 40px 10px 10px 10px;
-        -webkit-border-radius: 40px 10px 10px 10px;
-        
     }
     
     .grid-index-image:hover {
