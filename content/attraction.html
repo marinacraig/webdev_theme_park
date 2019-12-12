@@ -30,80 +30,73 @@
             <a href="../index.html"><img src="../assets/logo.svg" alt="logo" class="logo"></a>
         </div>
             
-    <ul class="nav-list">
-        
-        <li class="nav-list-item hidden"><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">open from 9am till 6pm</li>
-        <li class="nav-list-item hidden"><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
-        <li class="nav-list-item nav-attraction dropdown dropbtn">attractions
-            <ul class="nav-list nav-sublist dropdown-content">
+        <ul class="nav-list">
+            
+            <li class="nav-list-item hidden"><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">open from 9am till 6pm</li>
+            <li class="nav-list-item hidden"><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
+            <li class="nav-list-item nav-attraction dropdown dropbtn">attractions
+                <ul class="nav-list nav-sublist dropdown-content">
+                    
+                    <li class="nav-list-item nav-sublist-item"><a href="attraction.html">attraction1</a></li>
+                    <li class="nav-list-item nav-sublist-item"><a href="attraction.html">attraction2</a></li> 
+                    <li class="nav-list-item nav-sublist-item"><a href="attraction.html">attraction3</a></li>
                 
-                <li class="nav-list-item nav-sublist-item"><a href="attraction.html">attraction1</a></li>
-                <li class="nav-list-item nav-sublist-item"><a href="attraction.html">attraction2</a></li> 
-                <li class="nav-list-item nav-sublist-item"><a href="attraction.html">attraction3</a></li>
-               
-            </ul>
-        </li>
-    
-        <li class="nav-list-item"><a href="#">hotels</a></li>
-        <li class="nav-list-item disturber"><a href="tickets.html">buy tickets</a></li>
-        <!--Todo: Replace with a form? We'll not make it work in this project-->
-        <li class="nav-list-item"><a href="#"><img src="../assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</a></li>
-        <li class="nav-list-item"><a href="#"><img src="../assets/united-kingdom-flag-icon-64.png" alt="eng" class="language"></a></li>
-    </ul>
+                </ul>
+            </li>
+        
+            <li class="nav-list-item"><a href="#">hotels</a></li>
+            <li class="nav-list-item disturber"><a href="tickets.html">buy tickets</a></li>
+            <!--Todo: Replace with a form? We'll not make it work in this project-->
+            <li class="nav-list-item"><a href="#"><img src="../assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</a></li>
+            <li class="nav-list-item"><a href="#"><img src="../assets/united-kingdom-flag-icon-64.png" alt="eng" class="language"></a></li>
+        </ul>
     </nav>
 </header>
 
 
 <!--main area of the page-->
 <main class="attraction ">
-       <div class="first-section">
-    <!-- This will be a slideshow once we can use CSS and Javascript-->
-    <div class = "index-hover-ride">
-        <img class= "index-slider-image" src="../assets/Atractions/longrollercoaster.jpg" alt="image example" >
-            
-    </div>
-
-
-    <!-- Main Atraction -->
-    <div class="row">
-        <div class="column">
-        <!-- <h3>Space Roundabout</h3>-->
-            <h1>The Solar System Expedition</h1>
-            <img class="grid-index-image" src="../assets/Atractions/Spaceship_roundabout.jpg" style="width:50%" alt="image example">
-            <p>
-                There is no shortage of admirers and thrill seekers for our
-                most popular attraction, the Solar System Expedition,
-                due to its roller coaster resembling ride, which takes
-                the riders through a close to realitic journey from one end
-                to the other end of the the Solar System, with fun facts about
-                the whole Solar System and its planets whilst passing by each,
-                planet like structures.
-            </p>
+    <div class="first-section">
+        <!-- This will be a slideshow once we can use CSS and Javascript-->
+        <div class = "index-hover-ride slider-div">
+            <img class= "index-slider-image" src="../assets/Atractions/longrollercoaster.jpg" alt="image example" >
         </div>
 
-            <!-- Should be to the right of Main Atraction, CSS needed -->
-        <aside class="column">
-            <div>
-                <h2>Tiket Info</h2>
-                <p>Monday - Thursday</p>
-                <p>100</p>
-                <p>Friday - Sunday</p>
-                <p>150</p>
-                <a href="../content/tickets.html" class="nounderline"><div class="disturber button">Book Now</div></a>
+        <!-- Main Atraction -->
+        <div class="grid-container-attractions">
+            <div class="index-grid-ride">
+            <!-- <h3>Space Roundabout</h3>-->
+                <h1>The Solar System Expedition</h1>
+                <img class="grid-index-image" src="../assets/Atractions/Spaceship_roundabout.jpg" style="width:50%" alt="image example">
+                <p>
+                    There is no shortage of admirers and thrill seekers for our
+                    most popular attraction, the Solar System Expedition,
+                    due to its roller coaster resembling ride, which takes
+                    the riders through a close to realitic journey from one end
+                    to the other end of the the Solar System, with fun facts about
+                    the whole Solar System and its planets whilst passing by each,
+                    planet like structures.
+                </p>
             </div>
-        </aside>
-    </div>
-</div>
-    <!-- Gallery -->
-    <div class="row second-section">
-        <div class="column">
-            <h2>Photo Gallery</h2>
-            <img src="../assets/Atractions/Roller-Coaster-kids.jpg" style="width:50%" alt="image example">
+            <div class="index-grid-ride">
+                <div>
+                    <h2>Tiket Info</h2>
+                    <p>Monday - Thursday</p>
+                    <p>100</p>
+                    <p>Friday - Sunday</p>
+                    <p>150</p>
+                    <a href="../content/tickets.html" class="button-on-hoover button">Book Now</a>
+                </div>
+            </div><br>
         </div>
-
-        <!-- Should be to the right of Gallery, also the list should interact with the image, probably database, CSS and Javascript needed.-->
-        <aside class="column">
-        <div>
+    </div>
+    <!-- Gallery -->
+    <div class="second-section grid-container-attractions">
+        <div class="index-grid-ride">
+            <h2>Photo Gallery</h2>
+            <img class="grid-index-image" src="../assets/Atractions/Roller-Coaster-kids.jpg" style="width:50%" alt="image example">
+        </div>
+        <div class="index-grid-ride">
             <h2>Attractions Like This One</h2>
             <ul>
                 <li>Kids</li>
@@ -112,9 +105,7 @@
                 <li>Ferris Wheel</li>
             </ul>
             <a href="../index.html" class="nounderline" ><div class="button">View all Attractions</div></a>
-
-        </div>
-        </aside>
+        </div><br><br>
     </div>
     
 </main>

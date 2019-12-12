@@ -317,6 +317,15 @@ address {
         justify-items: center;
         padding-top: 2em;
     }
+    .grid-container-attractions {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:  
+            'index-grid-ride index-grid-ride'
+            'footer-grid footer-grid';
+        justify-items: center;
+        padding-top: 2em;
+    }
 
     .index-grid-ride {
         width: 80%;
