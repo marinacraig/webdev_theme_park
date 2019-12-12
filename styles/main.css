@@ -334,6 +334,7 @@ address {
     }
     .nav-list-item {
         display: inline;
+        float: left;
         padding: 15px;
         max-width: 13%;
         min-width: 9%;
