@@ -56,85 +56,219 @@
 
         <!--main area of the page-->
 <main>
-<div class="first-section tickets">
-    <h1>Buy Tickets</h1>
-    <form>
-        <h2>Category</h2>
-        <h3>General Admission</h3>
-    
-         <p>Tickets</p>   
-            <input class="input-group-field" type="number" name="quantity" value="0">
+<h1>Purchase Tickets</h1>
 
-        <h3>Member Tickets</h3>
+<h2>Options</h2>
 
-            <p>Tickets</p>
-            <input class="input-group-field" type="number" name="quantity" value="0">
+<h3>General Admission Ticket</h3>
 
-        <h3>Multi-Day</h3>
+<h4>Information</h4>
+<ul>
+    <li>This ticket allows you to access all three available attractions, including the Swing Ride, the Roller Coaster and the Ferris Wheel (the number of rides in not limited).</li>
+    <li>It is valid for one day and the entire park will be open to you, there are no restricted areas.</li>
+    <li>Access for the current special attraction "The Solar System Expedition" can be directly booked at the Space Park for an additional fee of $5.00 per person (children only pay $3.00).</li>
+</ul>
 
-            <p>Tickets</p>
-            <input class="input-group-field" type="number" name="quantity" value="0">
+<h4>Pricing</h4>
 
-            <!--does this button make sense?-->
-    <button class="button">Continue</button>
-        <br><br>
+<table>
+    <tr>
+        <th>Children</th>
+        <th>Students</th>
+        <th>Adults</th>
+    </tr>
+    <tr>
+        <td>$15.00</td>
+        <td>$25.00</td>
+        <td>$35.00</td>
+    </tr>
+</table>
 
-<h2>Dates</h2>
+<br>
+<br>
+<h3>Multi-Day Ticket</h3>
 
-    <label for="start">Select date:</label>
-    <input type="date" id="start" name="trip-start"
-       value="2019-11-15"
-       min="2019-11-15" max="2020-11-14">          
-        <br><br>
-    <!--does this button make sense?-->
-    <button class="button">Back</button>
-   <button class="button">Continue</button>
-        <br><br>
-   
-<h2>Add-Ons</h2>
-    <ul><li>Restaurant coupons?</li>
-        <li>Hotel stay?</li>
-        <li>Parking tickets?</li></ul>
-    <!--does this button make sence?-->
-    <button class="button">Back</button>
-    <button class="button">Continue</button>
-        <br><br>
+<h4>Information</h4>
+<ul>
+    <li>This ticket allows you to access all three available attractions, including the Swing Ride, the Roller Coaster and the Ferris Wheel (the number of rides in not limited).</li>
+    <li>A Multi-Day Ticket is valid for three consecutive days and the entire park will be open to you, there are no restricted areas.</li>
+    <li>Access for the current special attraction "The Solar System Expedition" can be directly booked at the Space Park for an additional fee of $5.00 per person and per ride (children only pay $3.00 per ride).</li>
+</ul>
 
-<h2>Check-Out</h2>
+<h4>Pricing</h4>
 
-        <label for="firstname">First name:</label><br>
-        <input type="text" name="firstname" id="firstname"><br>
-        <label for="lastname">Last name:</label><br>
-        <input type="text" name="lastname" id="lastname"><br>
-        
-        <label for="address">Address 1:</label><br>
-        <input type="text" name="address" id="address"><br>
-        <label for="address2">Address 2:</label><br>
-        <input type="text" name="address2" id="address2"><br>
+<table>
+    <tr>
+        <th>Children</th>
+        <th>Students</th>
+        <th>Adults</th>
+    </tr>
+    <tr>
+        <td>$40.00</td>
+        <td>$60.00</td>
+        <td>$80.00</td>
+    </tr>
+</table>
 
-        <label for="postal_code">Postal Code:</label><br>
-        <input type="number" name="postal_code" id="postal_code"><br>
-        <label for="town">Town:</label><br>
-        <input type="number" name="town" id="town"><br>
+<br>
+<br>
+<h3>Member Ticket</h3>
 
-        <label for="country">Country:</label><br>
-        <input type="text" name="country" id="country"><br>
-        <label for="phone_number">Phone number:</label><br>
-        <input type="text" name="phone_number" id="phone_number"><br><br>
+<h4>Information</h4>
+<ul>
+    <li>This ticket allows you to access all three available attractions, including the Swing Ride, the Roller Coaster and the Ferris Wheel (the number of rides in not limited).</li>
+    <li>A Member Ticket is valid for one entire year and the entire park will be open to you, there are no restricted areas.</li>
+    <li>Access for the current special attraction "The Solar System Expedition" is included within the Member Ticket.</li>
+</ul>
 
-        <label for="ccname">Name on Credit Card:</label><br>
-        <input type="text" name="ccname" id="ccname"><br>
-        <label for="ccnumber">Credit Card Number:</label><br>
-        <input type="text" name="ccnumber" id="ccnumber"><br>
+<h4>Pricing</h4>
 
-        <label for="expiration">Expiration Date:</label><br>
-        <input type="text" name="expiration" id="expiration"><br>
-        <label for="cvcnumber"> CVC Number:</label><br>
-        <input type="text" name="cvcnumber" id="cvcnumber"><br>
-<!--does this button make sence?-->
-<button class="button">Back</button>
-        <button type="submit" class="button">Buy Ticket(s)</button>
-    </form>
+<table>
+    <tr>
+        <th>Children</th>
+        <th>Students</th>
+        <th>Adults</th>
+    </tr>
+    <tr>
+        <td>$300.00</td>
+        <td>$500.00</td>
+        <td>$700.00</td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<h2>Date</h2>
+
+<p>Please select your desired date for your visit at Space Park.
+    <p>
+        <p>If you decide to purchase a Multi-Day or a Member Ticket, the selected date will be the day from which your access is first valid.
+            <p>
+
+                <form>
+                    Date Selection
+                    <br>
+                    <br>
+                    <input type="date" name="selectdate">
+                </form>
+                <br>
+                <br>
+
+                <h2>Quantity</h2>
+                <form>
+                    <table>
+                        <tr>
+                            <th>Categories</th>
+                            <th>General Admission Ticket</th>
+                            <th>Multi-Day Ticket</th>
+                            <th>Member Ticket</th>
+                        </tr>
+
+                        <tr>
+                            <td>Children</td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Students</td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Adults</td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" min="0" max="99" value="0">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <h2>Check-Out</h2>
+                <form>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input type="text" name="firstname" id="firstname">
+                    <br>
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input type="text" name="lastname" id="lastname">
+                    <br>
+
+                    <label for="address">Address 1</label>
+                    <br>
+                    <input type="text" name="address" id="address">
+                    <br>
+                    <label for="address2">Address 2</label>
+                    <br>
+                    <input type="text" name="address2" id="address2">
+                    <br>
+                    <label for="postal_code">Postal Code</label>
+                    <br>
+                    <input type="number" name="postal_code" id="postal_code">
+                    <br>
+                    <label for="town">Town:</label>
+                    <br>
+                    <input type="number" name="town" id="town">
+                    <br>
+                    <label for="country">Country</label>
+                    <br>
+                    <input type="text" name="country" id="country">
+                    <br>
+                    <label for="phone_number">Phone Number:</label>
+                    <br>
+                    <input type="text" name="phone_number" id="phone_number">
+                    <br>
+                    <br>
+
+                    <label for="ccname">Credit Card Holder</label>
+                    <br>
+                    <input type="text" name="ccname" id="ccname">
+                    <br>
+                    <label for="ccnumber">Credit Card Number</label>
+                    <br>
+                    <input type="text" name="ccnumber" id="ccnumber">
+                    <br>
+                    <label for="expiration">Expiration Date</label>
+                    <br>
+                    <input type="text" name="expiration" id="expiration">
+                    <br>
+                    <label for="cvcnumber"> CVC/CVV Number</label>
+                    <br>
+                    <input type="text" name="cvcnumber" id="cvcnumber">
+                    <br>
+                </form>
+                <br>
+                <br>
+                <p>Prices displayed are included Value Added Tax. Purchased tickets are not refundable or exchangeable!</p>
+                <p>Please bring your Student Identifcation Card with you when you visit the Space Park.</p>
+
+                <br>
+                <br>
+
+                <button type="submit" class="button">Complete Purchase</button>
 </div>
 </main>
 
