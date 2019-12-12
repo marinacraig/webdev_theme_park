@@ -167,7 +167,7 @@ header, .impressum{
 .button{
     background-color: #BD92DD;
     color: #fff;
-    width: 150px;
+    width: 160px;
     height: 30px;
     text-align: center;
     display: table-cell;
@@ -334,6 +334,7 @@ address {
     }
     .nav-list-item {
         display: inline;
+        float: left;
         padding: 15px;
         max-width: 13%;
         min-width: 9%;
@@ -377,7 +378,6 @@ address {
 
     .nav-attraction:hover{
         transition: 1s ease;
-        opacity: 0.3;
     }
     
     .index-slider-image {
