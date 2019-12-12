@@ -171,6 +171,7 @@ header, .impressum{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    border-radius: 10px;
 }
 .linked-button {
     min-width: 100%;
