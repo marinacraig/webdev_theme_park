@@ -241,6 +241,10 @@ text-decoration:none;
     padding: 1em;
 }
 
+input {
+   text-align:center;
+}
+
 .options {
     text-align: center;
 }
