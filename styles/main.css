@@ -71,8 +71,22 @@ header{
 .nav-logo {
    text-align: center;
    padding-top: 20px;
-   /*   background-color: #FFF; makes it too flashy?*/
 }
+
+/* keyframe logo slide-in animation */
+.animation {
+   -webkit-animation-name: animation;
+   -webkit-animation-duration: 4s; 
+   animation-name: animation;
+   animation-duration: 3s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes animation {
+    from {width:0%;}
+    to {width: 100%;}
+}
+
 .nav-logo .logo {
     width: 50%;;
 }
