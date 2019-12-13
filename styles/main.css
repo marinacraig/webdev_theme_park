@@ -525,8 +525,8 @@ address {
     }
 
     .nav-attraction:hover{
-        transition: 1s ease;
-        opacity: 0.3;
+        transition: 0.9s ease;
+        opacity: 0.9;
     }
     
     .index-slider-image {
