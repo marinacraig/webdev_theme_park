@@ -248,12 +248,6 @@ a.nounderline:link
 text-decoration:none;
 }
 
-
-.attraction {
-    /* padding-left: 20px;
-     padding-right: 20px; */
- }
-
  .column {
     float: left;
     width: 50%;
@@ -325,53 +319,7 @@ text-decoration:none;
      width: auto;
      padding: 5px;
 }
- @media(min-width: 1000px) {
-     table.center,th,td {
-         margin-top: 25px;
-         margin-bottom: 25px;
-         text-align: center;
-         border: 1px solid white;
-         border-collapse: collapse;
-         padding: 20px;
-    }
-     .date-form {
-         border: 5px solid #ffffff;
-         margin-left: 250px;
-         margin-right: 250px;
-         margin-top: 50px;
-         margin-bottom: 50px;
-         text-align: center;
-         color: #ffffff;
-         background-color: #1c6ac6;
-         padding: 25px;
-         border-radius: 0px;
-    }
-     .quantity-form {
-         border: 5px solid #ffffff;
-         margin-left: 250px;
-         margin-right: 250px;
-         margin-top: 50px;
-         color: #ffffff;
-         background-color: #1c6ac6;
-         padding: 25px;
-         border-radius: 0px;
-    }
-     .check-out-form{
-         border: 5px solid #ffffff;
-         margin-left: 250px;
-         margin-right: 250px;
-         margin-top: 50px;
-         margin-bottom: 50px;
-         text-align: center;
-         line-height: 25px;
-         color: #ffffff;
-         background-color: #1c6ac6;
-         padding: 25px;
-         border-radius: 0px;
-         width: auto;
-         padding: 5px;
-    }
-}
+
  .purchasebtn {
      margin-top: 7.5px;
      background-color: #bd92dd;
@@ -500,7 +448,7 @@ address {
 
     .map {
         max-width: 100%;
-        padding: auto 0;
+        padding: auto;
     }
 
     iframe {width: 80%; height: 300px;}
@@ -653,3 +601,50 @@ address {
         align-self: end;
     }
 }  /* end of @media screen and (min-width: 641px) */
+@media(min-width: 1000px) {
+    table.center,th,td {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        border: 1px solid white;
+        border-collapse: collapse;
+        padding: 20px;
+   }
+    .date-form {
+        border: 5px solid #ffffff;
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #1c6ac6;
+        padding: 25px;
+        border-radius: 0px;
+   }
+    .quantity-form {
+        border: 5px solid #ffffff;
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 50px;
+        color: #ffffff;
+        background-color: #1c6ac6;
+        padding: 25px;
+        border-radius: 0px;
+   }
+    .check-out-form{
+        border: 5px solid #ffffff;
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        line-height: 25px;
+        color: #ffffff;
+        background-color: #1c6ac6;
+        padding: 25px;
+        border-radius: 0px;
+        width: auto;
+        padding: 5px;
+   }
+}
