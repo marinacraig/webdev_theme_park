@@ -180,13 +180,18 @@ header, .impressum{
 /*main*/
 .button{
     background-color: #BD92DD;
+    padding: 0.5em;
     color: #fff;
     width: 160px;
     height: 30px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .linked-button {
     min-width: 100%;
@@ -212,17 +217,30 @@ header, .impressum{
     -webkit-border-radius: 40px 10px 10px 10px;
 }
 
+
+
 .slider-div {
     padding-top: 4em;
     padding-bottom: 4em;
 }
 
-aside {
+aside, .map {
     padding: 4em;
-    margin-left:auto;
-    margin-right:auto; 
     display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.index-slider-txt {
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D0D2D;
+}
+
+.aside-btn {margin: 2em;}
+
 
 /*attraction page*/
 a.nounderline:link
@@ -473,6 +491,20 @@ address {
         text-align: center;
     }
 
+    aside, .map {
+        padding: 2em;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .map {
+        max-width: 100%;
+        padding: auto 0;
+    }
+
+    iframe {width: 80%; height: 300px;}
+
 }
 
 @media screen and (min-width: 641px) {
@@ -564,6 +596,8 @@ address {
         position: relative;
     }
 
+    iframe {width: 50%; height: 450px;}
+
     .nav-hover-parent {
         position: relative;
     }
@@ -596,8 +630,6 @@ address {
 
     
     .button-on-hoover {
-        background-color: rgb(78, 86, 134);
-        padding: .5em;
         border-radius: 5px;
         text-decoration: none;
         color: white;
@@ -610,16 +642,6 @@ address {
         transition: .6s ease;
     }
 
-    iframe {
-        width: 50%;
-        height: 450px;
-        border: 0;
-        justify-items: center;
-        padding-top: 3em;
-        padding-bottom: 4em;
-        margin-left: 25%;
-        margin-right: 25%;
-    }
 
     /*footer*/
   
