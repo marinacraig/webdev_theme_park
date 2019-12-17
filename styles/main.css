@@ -217,11 +217,29 @@ header, .impressum{
     -webkit-border-radius: 40px 10px 10px 10px;
 }
 
-
+.slider-div-parent {
+    /* padding-top: 50px; */
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+}
 
 .slider-div {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    animation-name: sliderImage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* align-self: auto; */
+    margin: auto;
+    /* position: relative; */
+}
+
+@keyframes sliderImage {
+    0%   {background-image:url("../assets/landingpage-slider-image1.jpg"); background-size: cover; background-repeat: no-repeat; height: 100%; padding-top: 20%;} 
+    50%  {background-image:url("../assets/landingpage-slider-image2.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 100%; padding-top: 20%;}
+    100%   {background-image:url("../assets/landingpage-slider-image1.jpg"); background-size: cover; background-repeat: no-repeat; height: 100%; padding-top: 20%;}  
 }
 
 aside, .map {
@@ -236,7 +254,7 @@ aside, .map {
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: #1D0D2D;
+    background-color: rgb(6, 1, 12);
 }
 
 .aside-btn {margin: 2em;}
@@ -259,6 +277,11 @@ text-decoration:none;
     content: "";
     display: table;
     clear: both;
+  }
+
+  .attraction-main-div {
+    padding-top: 4em;
+    padding-bottom: 4em;
   }
 
 
@@ -416,7 +439,7 @@ address {
 
 @media screen and (max-width: 640px) {
 
-    .index-slider-image {
+    .index-slider-image, .attraction-main-image {
         width: 100%;
         height: auto;
     }
@@ -430,7 +453,7 @@ address {
         display:block;
     }
 
-    .grid-index-image, .index-slider-image {
+    .grid-index-image, .index-slider-image, .attraction-main-image {
         opacity: 0.8;
     }
 
@@ -507,7 +530,7 @@ address {
         width: 80%;
     }
 
-    .index-slider-image, .grid-index-image {
+    .index-slider-image, .grid-index-image, .attraction-main-image {
         max-width: 100%;
         height: auto;
         opacity: 0.8;
@@ -528,7 +551,7 @@ address {
         opacity: 0.9;
     }
     
-    .index-slider-image {
+    .index-slider-image, .attraction-main-image {
         /* curved corners */
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
