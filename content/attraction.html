@@ -8,7 +8,7 @@
     <meta name="keywords" content="theme park, space, outdoor, action">
     <meta name="author" content="Marlene Mhangami, Marc Horsch, Mathew George, Macarena Sagredo, Tomas Maciel Gutierrez, Marina Enadeghe">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
-    
+
     <meta name="robots" content="noindex, nofollow">
     <meta name="refresh" content="60">
 
@@ -23,138 +23,148 @@
 </head>
 
 <body>
-<!--header section with nav-->
-<header>
-    <nav>
-        <div class="nav-logo">
-            <a href="../index.html"><img src="../assets/logo.svg" alt="logo" class="logo"></a>
+    <!--header section with nav-->
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../assets/logo.svg" alt="logo" class="logo"></a>
+            </div>
+
+            <ul class="nav-list">
+
+                <li class="nav-list-item hidden"><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">open from 9am till 6pm</li>
+                <li class="nav-list-item hidden"><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
+                <li class="nav-list-item nav-attraction dropdown dropbtn">attractions
+                    <ul class="nav-list nav-sublist dropdown-content">
+
+                        <li class="nav-list-item nav-sublist-item"><a href="attraction.html">Swing Ride</a></li>
+                        <li class="nav-list-item nav-sublist-item"><a href="attraction.html">Roller Coaster</a></li>
+                        <li class="nav-list-item nav-sublist-item"><a href="attraction.html">Ferris Wheel</a></li>
+                        <li class="nav-list-item nav-sublist-item"><a href="attraction.html">More...</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-list-item"><a href="#">hotels</a></li>
+                <li class="nav-list-item disturber"><a href="tickets.html">buy tickets</a></li>
+                <!--Todo: Replace with a form? We'll not make it work in this project-->
+                <li class="nav-list-item">
+                    <a href="#"><img src="../assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#"><img src="../assets/united-kingdom-flag-icon-64.png" alt="eng" class="language"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main area of the page-->
+    <main class="attraction ">
+        <div class="first-section">
+            <!-- This will be a slideshow once we can use CSS and Javascript-->
+            <div class="attraction-main-div">
+                <img class="attraction-main-image" src="../assets/Atractions/longrollercoaster.jpg" alt="image example">
+            </div>
+
+            <!-- Main Atraction -->
+            <div class="grid-container-attractions">
+                <div class="index-grid-ride">
+                    <!-- <h3>Space Roundabout</h3>-->
+                    <h1>The Solar System Expedition</h1>
+                    <img class="grid-index-image" src="../assets/Atractions/Spaceship_roundabout.jpg" style="width:50%" alt="image example">
+                    <p>
+                        There is no shortage of admirers and thrill seekers for our most popular attraction, the Solar System Expedition, due to its roller coaster resembling ride, which takes the riders through a close to realitic journey from one end to the other end of the the Solar System, with fun facts about the whole Solar System and its planets whilst passing by each, planet like structures.
+                    </p>
+                </div>
+                <div class="index-grid-ride">
+                    <div>
+                        <h2>Tiket Info</h2>
+                        <p>Monday - Thursday</p>
+                        <p>100</p>
+                        <p>Friday - Sunday</p>
+                        <p>150</p>
+                        <a href="../content/tickets.html" class="button-on-hoover button">Book Now</a>
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
-            
-        <ul class="nav-list">
-            
-            <li class="nav-list-item hidden"><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">open from 9am till 6pm</li>
-            <li class="nav-list-item hidden"><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
-            <li class="nav-list-item nav-attraction dropdown dropbtn">attractions
-                <ul class="nav-list nav-sublist dropdown-content">
-                    
-                    <li class="nav-list-item nav-sublist-item"><a href="attraction.html">Swing Ride</a></li>
-                    <li class="nav-list-item nav-sublist-item"><a href="attraction.html">Roller Coaster</a></li> 
-                    <li class="nav-list-item nav-sublist-item"><a href="attraction.html">Ferris Wheel</a></li>
-                    <li class="nav-list-item nav-sublist-item"><a href="attraction.html">More...</a></li>
-                
-                </ul>
-            </li>
-        
-            <li class="nav-list-item"><a href="#">hotels</a></li>
-            <li class="nav-list-item disturber"><a href="tickets.html">buy tickets</a></li>
-            <!--Todo: Replace with a form? We'll not make it work in this project-->
-            <li class="nav-list-item"><a href="#"><img src="../assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</a></li>
-            <li class="nav-list-item"><a href="#"><img src="../assets/united-kingdom-flag-icon-64.png" alt="eng" class="language"></a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<!--main area of the page-->
-<main class="attraction ">
-    <div class="first-section">
-        <!-- This will be a slideshow once we can use CSS and Javascript-->
-        <div class = "attraction-main-div">
-            <img class= "attraction-main-image" src="../assets/Atractions/longrollercoaster.jpg" alt="image example" >
-        </div>
-
-        <!-- Main Atraction -->
-        <div class="grid-container-attractions">
+        <!-- Gallery -->
+        <div class="second-section grid-container-attractions">
             <div class="index-grid-ride">
-            <!-- <h3>Space Roundabout</h3>-->
-                <h1>The Solar System Expedition</h1>
-                <img class="grid-index-image" src="../assets/Atractions/Spaceship_roundabout.jpg" style="width:50%" alt="image example">
-                <p>
-                    There is no shortage of admirers and thrill seekers for our
-                    most popular attraction, the Solar System Expedition,
-                    due to its roller coaster resembling ride, which takes
-                    the riders through a close to realitic journey from one end
-                    to the other end of the the Solar System, with fun facts about
-                    the whole Solar System and its planets whilst passing by each,
-                    planet like structures.
-                </p>
+                <h2>Photo Gallery</h2>
+                <img class="grid-index-image" src="../assets/Atractions/Roller-Coaster-kids.jpg" style="width:50%" alt="image example">
             </div>
             <div class="index-grid-ride">
-                <div>
-                    <h2>Tiket Info</h2>
-                    <p>Monday - Thursday</p>
-                    <p>100</p>
-                    <p>Friday - Sunday</p>
-                    <p>150</p>
-                    <a href="../content/tickets.html" class="button-on-hoover button">Book Now</a>
-                </div>
-            </div><br>
+                <h2>Attractions Like This One</h2>
+                <ul>
+                    <li>Kids</li>
+                    <li>Roller Coaster</li>
+                    <li>Carousel</li>
+                    <li>Ferris Wheel</li>
+                </ul>
+                <a href="../index.html" class="nounderline">
+                    <div class="button">View all Attractions</div>
+                </a>
+            </div>
+            <br>
+            <br>
         </div>
-    </div>
-    <!-- Gallery -->
-    <div class="second-section grid-container-attractions">
-        <div class="index-grid-ride">
-            <h2>Photo Gallery</h2>
-            <img class="grid-index-image" src="../assets/Atractions/Roller-Coaster-kids.jpg" style="width:50%" alt="image example">
-        </div>
-        <div class="index-grid-ride">
-            <h2>Attractions Like This One</h2>
-            <ul>
-                <li>Kids</li>
-                <li>Roller Coaster</li>
-                <li>Carousel</li>
-                <li>Ferris Wheel</li>
-            </ul>
-            <a href="../index.html" class="nounderline" ><div class="button">View all Attractions</div></a>
-        </div><br><br>
-    </div>
-    
-</main>
 
-<!--footer section with nav parts, about us, social media-->
-<footer >
+    </main>
+
+    <!--footer section with nav parts, about us, social media-->
+    <footer>
         <!-- make sure links of nav and icons are correct-->
         <div class="grid-container">
-        <div class="footer-section">
-            <!--content of navigation-->
-            
-            <ul class="footer-list">
-                <li class="footer-list-item text"><a href="../index.html">overview</a></li>
-                <li class="footer-list-item text"><a href="tickets.html">tickets</a></li>
-                <li class="footer-list-item"><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
-                <li class="footer-list-item"><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">daily open from 9am till 6pm</li>
-            </ul>
-        </div>
-        
-        <div class="footer-section">
-                <a href="../index.html">
-                        <img src="../assets/logo.svg" alt="logo" class="logo">
-                    </a>
-            <ul class="footer-list">
-                <li class="footer-list-item text"><a href="#">company</a></li>
-                <li class="footer-list-item text"><a href="#">career</a></li>
-                <li class="footer-list-item text"><a href="#">support & contact</a></li>
-            </ul>
-        </div>
+            <div class="footer-section">
+                <!--content of navigation-->
 
-        <!-- socialmedia icons for facebook, insta, twitter, youtube-->
-        <div class="footer-section">
-            <ul class="footer-list">
-                <li class="footer-list-item">
-                    <ul class="footer-list">
-                            <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-facebook-4.svg" alt="facebook" class="socialmedia-icon"></a></li>
-                            <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-instagram-14.svg" alt="instagram" class="socialmedia-icon"></a></li>            
-                    </ul>
-                </li>
-                <li class="footer-list-item">
-                    <ul class="footer-list">
-                        <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-twitter-4.svg" alt="twitter" class="socialmedia-icon"></a></li>
-                        <li class="footer-list-item"><a href="#"><img src="../assets/iconmonstr-youtube-9.svg" alt="youtube" class="socialmedia-icon"></a></li>
-                    </ul>
-                </li>
-            </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item text"><a href="../index.html">overview</a></li>
+                    <li class="footer-list-item text"><a href="tickets.html">tickets</a></li>
+                    <li class="footer-list-item"><img src="../assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
+                    <li class="footer-list-item"><img src="../assets/iconmonstr-time-3.svg" alt="clock" class="icon">daily open from 9am till 6pm</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="logo" class="logo">
+                </a>
+                <ul class="footer-list">
+                    <li class="footer-list-item text"><a href="#">company</a></li>
+                    <li class="footer-list-item text"><a href="#">career</a></li>
+                    <li class="footer-list-item text"><a href="#">support & contact</a></li>
+                </ul>
+            </div>
+
+            <!-- socialmedia icons for facebook, insta, twitter, youtube-->
+            <div class="footer-section">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><img src="../assets/iconmonstr-facebook-4.svg" alt="facebook" class="socialmedia-icon"></a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="../assets/iconmonstr-instagram-14.svg" alt="instagram" class="socialmedia-icon"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-list-item">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><img src="../assets/iconmonstr-twitter-4.svg" alt="twitter" class="socialmedia-icon"></a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="../assets/iconmonstr-youtube-9.svg" alt="youtube" class="socialmedia-icon"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
         <div class="clearfix"></div>
         <div class="impressum">
@@ -165,4 +175,5 @@
 
     </footer>
 </body>
+
 </html>
