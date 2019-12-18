@@ -218,30 +218,29 @@ header, .impressum{
 }
 
 .slider-div-parent {
-    /* padding-top: 50px; */
 	top:0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	
 	margin: auto;
 }
 
+/* slider animation definition for the landing page */
 .slider-div {
     animation-name: sliderImage;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    /* align-self: auto; */
     margin: auto;
-    /* position: relative; */
 }
 
+/* keyframes animation definiton for the slider-div */
 @keyframes sliderImage {
     0%   {background-image:url("../assets/landingpage-slider-image1.jpg"); background-size: cover; background-repeat: no-repeat; height: 100%; padding-top: 20%;} 
     50%  {background-image:url("../assets/landingpage-slider-image2.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 100%; padding-top: 20%;}
     100%   {background-image:url("../assets/landingpage-slider-image1.jpg"); background-size: cover; background-repeat: no-repeat; height: 100%; padding-top: 20%;}  
 }
 
+/* formatting and positioning for aside-tag and map-class */
 aside, .map {
     padding: 4em;
     display:flex;
@@ -256,8 +255,6 @@ aside, .map {
     justify-content: center;
     background-color: rgb(6, 1, 12);
 }
-
-.aside-btn {margin: 2em;}
 
 
 /*attraction page*/
@@ -439,22 +436,32 @@ address {
 
 @media screen and (max-width: 640px) {
 
-    .index-slider-image, .attraction-main-image {
+    .attraction-main-image {
         width: 100%;
         height: auto;
     }
 
+    /* grid images' positioning */
     .grid-index-image {
         width: 80%;
         height: auto;
         margin: auto 0;
         margin-left:auto;
         margin-right:auto; 
-        display:block;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .grid-index-image, .index-slider-image, .attraction-main-image {
+    /* opacity adjustment, so all images would fit in with the space-park theme */
+    .grid-index-image, .attraction-main-image {
         opacity: 0.8;
+    }
+
+    .index-slider-txt {
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .index-grid-ride {
@@ -462,6 +469,7 @@ address {
         text-align: center;
     }
 
+    /* positioning and  */
     aside, .map {
         padding: 2em;
         display:flex;
@@ -474,6 +482,9 @@ address {
     }
 
     iframe {width: 80%; height: 300px;}
+
+    /* mobile margin for buttons within the aside-tag */
+    .aside-btn {margin: 2%;}
 
 }
 
@@ -526,6 +537,7 @@ address {
         padding-top: 2em;
     }
 
+    /* defining grid width within the page */
     .index-grid-ride {
         width: 80%;
     }
@@ -541,6 +553,7 @@ address {
         box-shadow: 10px 10px 20px -8px rgba(240,221,240,1);
     }
     
+    /* image opacity will increase on hover, to visually make way for text display */
     .grid-index-image:hover {
         transition: 1s ease;
         opacity: 0.3;
@@ -551,26 +564,26 @@ address {
         opacity: 0.9;
     }
     
-    .index-slider-image, .attraction-main-image {
+    .attraction-main-image {
         /* curved corners */
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
         -webkit-border-radius: 10px 10px 10px 10px;
         
+        /* centering the main image */
         margin-left:auto;
         margin-right:auto; 
         display:block;
     }
     
+    /* positioning the "hover over image to diplay text" */
     .index-hover-parent {
         position: relative;
     }
 
+    /* map width and height */
     iframe {width: 50%; height: 450px;}
 
-    .nav-hover-parent {
-        position: relative;
-    }
     
     /* hiding div to be displayed on mouse hover */
     .div-on-hoover {
@@ -598,7 +611,11 @@ address {
         transition: .6s ease;
     }
 
+    /* desktop margin for buttons within the aside-tag */
+    .aside-btn {margin: 3em;}
     
+
+    /* button definition */
     .button-on-hoover {
         border-radius: 5px;
         text-decoration: none;
@@ -606,7 +623,7 @@ address {
         transition: .6s ease;
     }
      
-    /* button animation */
+    /* button animation- expands on hover */
     .button:hover {
         letter-spacing: 1px;
         transition: .6s ease;
