@@ -62,6 +62,7 @@
     <main>
         <div class="first-section tickets">
             <div class="options">
+                <!-- headers and descriptional text for ticket options-->
                 <h1>Purchase Tickets</h1>
 
                 <h2>Options</h2>
@@ -75,6 +76,7 @@
 
                 <p>Access for the current special attraction "The Solar System Expedition" can be directly booked at the Space Park for an additional fee of $5.00 per person (children only pay $3.00).</p>
 
+                <!--pricing table-->
                 <h4>Pricing</h4>
                 <table class="center">
                     <tr>
@@ -88,7 +90,9 @@
                         <td>$35.00</td>
                     </tr>
                 </table>
+                <!--section line to break up content-->
                 <hr>
+                <!-- headers and descriptional text for ticket options-->
                 <h3>Multi-Day Ticket</h3>
 
                 <h4>Information</h4>
@@ -98,6 +102,7 @@
 
                 <p>Access for the current special attraction "The Solar System Expedition" can be directly booked at the Space Park for an additional fee of $5.00 per person and per ride (children only pay $3.00 per ride).</p>
 
+                <!--pricing table-->
                 <h4>Pricing</h4>
                 <table class="center">
                     <tr>
@@ -111,8 +116,9 @@
                         <td>$80.00</td>
                     </tr>
                 </table>
+                <!--section line to break up content-->
                 <hr>
-
+                <!-- headers and descriptional text for ticket options-->
                 <h3>Member Ticket</h3>
 
                 <h4>Information</h4>
@@ -122,8 +128,8 @@
 
                 <p>Access for the current special attraction "The Solar System Expedition" is included within the Member Ticket.</p>
 
+                <!--pricing table-->
                 <h4>Pricing</h4>
-
                 <table class="center">
                     <tr>
                         <th>Children</th>
@@ -136,21 +142,25 @@
                         <td>$700.00</td>
                     </tr>
                 </table>
+                <!--section line to break up content-->
                 <hr>
             </div>
             <div class="date-form">
+                <!--date selection box-->
                 <h2>Date Selection</h2>
 
                 <p>Please select your desired date for your visit at Space Park.
                     <p>
                         <p>If you decide to purchase a Multi-Day or a Member Ticket, the selected date will be the day from which your access is first valid.
                             <p>
-
+                                <!--date picker input box-->
                                 <input type="date" name="selectdate">
             </div>
             <div class="quantity-form">
+                <!--quantity selection box-->
                 <h2>Quantity</h2>
                 <table class="center">
+                    <!--table for entering quantities-->
                     <tr>
                         <th>Categories</th>
                         <th>General Admission Ticket</th>
@@ -199,9 +209,11 @@
                 </table>
             </div>
             <div class="check-out-form">
+                <!--check-out form-->
                 <h2>Check-Out</h2>
 
                 <h3>Customer Details</h3>
+                <!--input fields for customer data incl. labels and descriptions-->
                 <label for="fullname">Full Name</label>
                 <br>
                 <input type="text" placeholder="Full Name" id="fullname" style="width: 200px">
@@ -247,8 +259,10 @@
                 <p>Prices displayed are inclusive of Value Added Tax. Purchased tickets are not refundable or exchangeable!</p>
                 <p>If you purchase a ticket as a student, please bring your Student Identifcation Card with you when you visit the Space Park.</p>
 
+                <!--"confirm purchase" button to validate the user input-->
                 <button id="purchasebtn" class="purchasebtn">Confirm Purchase</button>
 
+                <!--"in case the required text  boxes were not filled out by the user, a modal will pop up-->
                 <div id="myModal" class="modal">
 
                     <div class="modal-content">
@@ -260,6 +274,7 @@
 
                 </div>
 
+                <!--"JS code for the modal to pop up-->
                 <script>
                     // Get the modal
                     var modal = document.getElementById("myModal");
