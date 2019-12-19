@@ -282,17 +282,23 @@ text-decoration:none;
   }
 
 
-/*ticket page*/
+/*purchase tickets page*/
 .tickets {
      padding: 1em;
      text-align: center;
 }
+
+/*centers the text which is being entered in the text boxes*/
  input {
      text-align: center;
 }
+
+/*centers the descriptional text for the various ticket options*/
  .options {
      text-align: center;
 }
+
+/*defines the layout for all tables on the page*/
  table.center, th, td {
      margin-left: auto;
      margin-right: auto;
@@ -302,6 +308,8 @@ text-decoration:none;
      border: 1px solid white;
      border-collapse: collapse;
 }
+
+/*defines the layout for the date selection box on the page*/
  .date-form {
      border: 5px solid #ffffff;
      margin-left: auto;
@@ -314,6 +322,8 @@ text-decoration:none;
      padding: 25px;
      border-radius: 0px;
 }
+
+/*defines the layout for the quantity selection box on the page*/
  .quantity-form {
      border: 5px solid #ffffff;
      margin-left: auto;
@@ -324,6 +334,8 @@ text-decoration:none;
      padding: 25px;
      border-radius: 0px;
 }
+
+/*defines the layout for the check-out form on the page*/
  .check-out-form {
      border: 5px solid #ffffff;
      margin-left: auto;
@@ -340,6 +352,7 @@ text-decoration:none;
      padding: 5px;
 }
 
+/*defines the layout for the "confirm purchase" button at the bottom of the page (width is being adjusted automatically)*/
  .purchasebtn {
      margin-top: 7.5px;
      background-color: #bd92dd;
@@ -351,10 +364,14 @@ text-decoration:none;
      cursor: pointer;
      font-size: 17px;
 }
+
+/*hover function settings for "confirm purchase" button*/
  .purchasebtn:hover {
      letter-spacing: 2px;
      transition: .6s ease;
 }
+
+/*layout settings for the modal which is being displayed when the form is not filled out entirely*/
  .modal {
      display: none;
      position: fixed;
@@ -368,6 +385,8 @@ text-decoration:none;
      background-color: rgb(0, 0, 0);
      background-color: rgba(0, 0, 0, 0.4);
 }
+
+/*layout settings for the text/content of the modal which is being displayed when the form is not filled out entirely*/
  .modal-content {
      background-color: #fefefe;
      color: #bd92dd;
@@ -376,12 +395,16 @@ text-decoration:none;
      border: 1px solid #888;
      width: 80%;
 }
+
+/*design for the X (close button) on the modal*/
  .close {
      color: #aaaaaa;
      float: right;
      font-size: 28px;
      font-weight: bold;
 }
+
+/*hover function for the X (close button) on the modal*/
  .close:hover, .close:focus {
      color: #000;
      text-decoration: none;
@@ -640,50 +663,58 @@ address {
         align-self: end;
     }
 }  /* end of @media screen and (min-width: 641px) */
-@media(min-width: 1000px) {
-    table.center,th,td {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        text-align: center;
-        border: 1px solid white;
-        border-collapse: collapse;
-        padding: 20px;
-   }
-    .date-form {
-        border: 5px solid #ffffff;
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        color: #ffffff;
-        background-color: #1c6ac6;
-        padding: 25px;
-        border-radius: 0px;
-   }
-    .quantity-form {
-        border: 5px solid #ffffff;
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-top: 50px;
-        color: #ffffff;
-        background-color: #1c6ac6;
-        padding: 25px;
-        border-radius: 0px;
-   }
-    .check-out-form{
-        border: 5px solid #ffffff;
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        line-height: 25px;
-        color: #ffffff;
-        background-color: #1c6ac6;
-        padding: 25px;
-        border-radius: 0px;
-        width: auto;
-        padding: 5px;
-   }
+
+
+/*layout settings for tickets page when viewing on desktop*/
+/*the minimum width is set at 1000px, otherwise the tables wouldn't scale properly when viewing the page on a larger screen*/
+ @media(min-width: 1000px) {
+    /*defines the layout for all tables on the page*/
+     table.center,th,td {
+         margin-top: 25px;
+         margin-bottom: 25px;
+         text-align: center;
+         border: 1px solid white;
+         border-collapse: collapse;
+         padding: 20px;
+    }
+    /*defines the layout for the date selection box on the page*/
+     .date-form {
+         border: 5px solid #ffffff;
+         margin-left: 250px;
+         margin-right: 250px;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         text-align: center;
+         color: #ffffff;
+         background-color: #1c6ac6;
+         padding: 25px;
+         border-radius: 0px;
+    }
+    /*defines the layout for the quantity selection box on the page*/
+     .quantity-form {
+         border: 5px solid #ffffff;
+         margin-left: 250px;
+         margin-right: 250px;
+         margin-top: 50px;
+         color: #ffffff;
+         background-color: #1c6ac6;
+         padding: 25px;
+         border-radius: 0px;
+    }
+    /*defines the layout for the check-out form on the page*/
+     .check-out-form{
+         border: 5px solid #ffffff;
+         margin-left: 250px;
+         margin-right: 250px;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         text-align: center;
+         line-height: 25px;
+         color: #ffffff;
+         background-color: #1c6ac6;
+         padding: 25px;
+         border-radius: 0px;
+         width: auto;
+         padding: 5px;
+    }
 }
