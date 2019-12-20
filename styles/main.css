@@ -374,6 +374,7 @@ text-decoration:none;
      transition: .6s ease;
 }
 
+/*some of the CSS for the modal below has been sourced from w3schools.com and has been modified to work with the check-out form*/
 /*layout settings for the modal which is being displayed when the form is not filled out entirely*/
  .modal {
      display: none;
