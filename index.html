@@ -150,11 +150,13 @@
 
     <!--footer section with nav parts, about us, social media-->
     <footer>
-        <!-- make sure links of nav and icons are correct-->
+        <!-- Reminder: make sure links of nav and icons are correct when copy pasting-->
+        <!--div for grid (because this grid was the first being implemented)-->
         <div class="grid-container">
+            <!--div for grid area 1 -->
             <div class="footer-section">
-                <!--content of navigation-->
 
+                <!--content of navigation-->
                 <ul class="footer-list">
                     <li class="footer-list-item text"><a href="index.html">overview</a></li>
                     <li class="footer-list-item text"><a href="content/tickets.html">tickets</a></li>
@@ -163,10 +165,16 @@
                 </ul>
             </div>
 
+            <!--div for grid area 2 -->
             <div class="footer-section">
+                <!--about us area-->
+
+                <!--with logo linked to home-->
                 <a href="index.html">
                     <img src="assets/logo.svg" alt="logo" class="logo">
                 </a>
+
+                <!-- company promotion links-->
                 <ul class="footer-list">
                     <li class="footer-list-item text"><a href="#">company</a></li>
                     <li class="footer-list-item text"><a href="#">career</a></li>
@@ -174,24 +182,33 @@
                 </ul>
             </div>
 
-            <!-- socialmedia icons for facebook, insta, twitter, youtube-->
+            <!--div for grid area 3 -->
             <div class="footer-section">
+
+                <!-- socialmedia icons for facebook, insta, twitter, youtube-->
+                <!--ul inside ul due to styling of list items-->
                 <ul class="footer-list">
+                    <!--first column-->
                     <li class="footer-list-item">
                         <ul class="footer-list">
+                            <!--first row item with social media icon 1-->
                             <li class="footer-list-item">
                                 <a href="#"><img src="assets/iconmonstr-facebook-4.svg" alt="facebook" class="socialmedia-icon"></a>
                             </li>
+                            <!--second row item with social media icon 2-->
                             <li class="footer-list-item">
                                 <a href="#"><img src="assets/iconmonstr-instagram-14.svg" alt="instagram" class="socialmedia-icon"></a>
                             </li>
                         </ul>
                     </li>
+                    <!--second column-->
                     <li class="footer-list-item">
                         <ul class="footer-list">
+                            <!--first row item with social media icon 3-->
                             <li class="footer-list-item">
                                 <a href="#"><img src="assets/iconmonstr-twitter-4.svg" alt="twitter" class="socialmedia-icon"></a>
                             </li>
+                            <!--second row item with social media icon 4-->
                             <li class="footer-list-item">
                                 <a href="#"><img src="assets/iconmonstr-youtube-9.svg" alt="youtube" class="socialmedia-icon"></a>
                             </li>
@@ -200,8 +217,10 @@
                 </ul>
             </div>
         </div>
-
+        <!--stop elements to float-->
         <div class="clearfix"></div>
+
+        <!--another box for the bottom with address and copyright (instead of an impressum)-->
         <div class="impressum">
 
             <address class="impressum-address">Space Park, parkavenue 345, F-4098 Lyon</address>

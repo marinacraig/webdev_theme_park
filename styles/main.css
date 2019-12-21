@@ -4,11 +4,17 @@
 
 
 /*
+structure of the file:
 mobile first
 main settings 
 header 
 main (index, attraction, tickets)
 footer
+*/
+
+/*
+main settings for all pages with fonts, width and 
+reset of browsersettings concerning margins and paddings
 */
 
 html{
@@ -29,7 +35,7 @@ body {
 .clearfix {
     clear:both;
 }
-/*special font definition*/
+/*special font definition for all titles*/
 h1,h2,h3 {
     font-family: 'Righteous', cursive;
     text-align: center;
@@ -53,6 +59,11 @@ below
 
 
 /*header, nav*/
+/* 
+the header has a different size, the navigation tabs 
+need some separation and that they're links shall be 
+visualized by a hand 
+*/
 header{
     font-size: 1.3em;
     color: black;
@@ -63,11 +74,15 @@ header{
     padding: 5px 10px;
     cursor: pointer;
 }
+/*
+in the mobile version not all parts of the navigation 
+are visible, therefore we use the class hidden
+*/
 .hidden {
     visibility: hidden;
     height: 0;
 }
-
+/*positon of the logo*/
 .nav-logo {
    text-align: center;
    padding-top: 20px;
@@ -87,15 +102,21 @@ header{
     to {width: 100%;}
 }
 
+/*styling of remaining navigation parts*/
 .nav-logo .logo {
     width: 50%;;
 }
 .nav-list-item .icon {
     padding-right: 10px;
 }
+/*this is for the language flags*/
 .language {
     width: 50px;
 }
+/*
+disturber is the class for the blue background to get
+a better CTR (click-through-rate)
+*/
 .nav-list-item.disturber {
     height: 100%;
 }
@@ -148,7 +169,12 @@ header{
   }
   
 
-/*same CSS for header and footer*/
+/*
+same CSS for header and footer (for things both have in common)
+- avoid double code
+- same backgrounds
+- list item stylings
+*/
 header, .impressum{
     background: #B0B0AF;
 }
@@ -167,7 +193,7 @@ header, .impressum{
     padding: 0;
 }
 
-/*nav and main*/
+/*disturber is part of nav and main (CTR)*/
 .button a, .disturber a {
     text-decoration: none;
     color: #fff;
@@ -416,7 +442,16 @@ text-decoration:none;
 }
 
 
-/*footer*/
+/*
+footer:
+- general text and box stylings
+- definition of colors involving user actions
+- taking the different sizes of text and icons in consideration 
+- positioning
+- address and team are placed inside a div with the class 
+impressum, to be able to style them different from the other 
+parts of the footer
+*/
 footer {
     text-align: center;
     padding-top: 20px;
@@ -460,6 +495,7 @@ address {
     padding-top: 16px;
     font-style: normal;
 }
+/*end of footer */
 
 @media screen and (max-width: 640px) {
 
@@ -515,12 +551,20 @@ address {
 
 }
 
+/* now the tablet and dektop part to have a nice UI */
 @media screen and (min-width: 641px) {
+    /* bigger font, so the text is easier to read */
     body {
         font-size: 16px;
     }
 
-    /*navigation*/
+    /*
+    navigation:
+    - show the hidden parts
+    - change the sizes of the items 
+    - align items beside each other without a grid (due to sizes 
+    and amount of items
+    */
     .hidden {
         visibility: visible;
         height: 100%;
@@ -657,11 +701,15 @@ address {
 
 
     /*footer*/
-  
+    /*padding correction (get rid of extra space)*/
     footer {
-        grid-area: footer-grid;
         padding-top: 0px;
     }
+    /*implement grid*/
+    .grid-container{
+        grid-area: footer-grid;
+    }
+    /*parts aligned at the bottom*/
     .footer-section {
         align-self: end;
     }
