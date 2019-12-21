@@ -497,8 +497,7 @@ address {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-areas:  
-            'index-grid-ride index-grid-ride'
-            'footer-grid footer-grid';
+            'index-grid-ride index-grid-ride';
         justify-items: center;
         padding-top: 2em;
     }
