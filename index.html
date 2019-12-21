@@ -8,7 +8,7 @@
     <meta name="keywords" content="theme park, space, outdoor, action">
     <meta name="author" content="Marlene Mhangami, Marc Horsch, Mathew George, Macarena Sagredo, Tomas Gutierrez, Marina Enadeghe">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
-    
+
     <meta name="robots" content="noindex, nofollow">
     <meta name="refresh" content="60">
 
@@ -18,148 +18,188 @@
     <!--styling sheet-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 
-    <!--shows in browser tag-->
+    <!--shows in browser tab-->
     <title>space park</title>
 </head>
 
 <body>
-<!--header section with nav-->
-<header>
-<nav>
-    <div class="nav-logo animation">
-        <a href="index.html"><img src="assets/logo.svg" alt="logo" class="logo"></a>
-    </div>
-        
-<ul class="nav-list">
-    
-    <li class="nav-list-item hidden"><img src="assets/iconmonstr-time-3.svg" alt="clock" class="icon">open from 9am till 6pm</li>
-    <li class="nav-list-item hidden"><img src="assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
-    <li class="nav-list-item nav-attraction dropdown dropbtn">attractions
-        <ul class="nav-list nav-sublist dropdown-content">
-            
-            <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">Swing Ride</a></li>
-            <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">Roller Coaster</a></li> 
-            <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">Ferris Wheel</a></li>
-            <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">More..</a></li>
-           
-        </ul>
-    </li>
-
-    <li class="nav-list-item"><a href="#">hotels</a></li>
-    <li class="nav-list-item disturber"><a href="content/tickets.html">buy tickets</a></li>
-    <!--Todo: Replace with a form? We'll not make it work in this project-->
-    <li class="nav-list-item"><a href="#"><img src="assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</a></li>
-    <li class="nav-list-item"><a href="#"><img src="assets/united-kingdom-flag-icon-64.png" alt="eng" class="language"></a></li>
-</ul>
-</nav>
-</header>
-
-<!--main area of the page-->
-<main id="main-page">
-    <div class="first-section">
-        <!--Slider area???-->
-        <div class="slider-div">
-            <!-- <img class="index-slider-image" src="assets/landingpage-slider-image1.jpg" alt="Image of a Swing ride" style="margin-left:auto; margin-right:auto; display:block;"> -->
-            <img class="index-slider-image" src="assets/landingpage-slider-image2.jpg" alt="Image of a Ferris Wheel" >
-            <br>
-            <p class="index-slider-txt">Come hang with us for an 'outta this world' experience!</p>
-        </div>
-
-        <!-- main attractions' area -->
-        <h1>Main Attractions</h1>
-        <!-- main attractions grid area -->
-        <div class="grid-container">
-            <div class="index-grid-ride">
-                <div class="index-hover-parent">
-                    <img class="grid-index-image" src="assets/ride1-landing-page.jfif" alt="Image of Swing ride">
-                    <div class="div-on-hoover">
-                        <p class="text-on-hoover"><b>Swing Ride:</b> The most popular ride we have at the park.</p><br>
-                    </div>
-                    <a class="button-on-hoover button" href="content/attraction.html">View Swing Ride</a>
-                </div>
+    <!--header section with nav-->
+    <header>
+        <nav>
+            <div class="nav-logo animation">
+                <a href="index.html"><img src="assets/logo.svg" alt="logo" class="logo"></a>
             </div>
-            
-            <div class="index-grid-ride">
-                <div class="index-hover-parent">
-                    <img class="grid-index-image" src="assets/ride2-landing-page.jfif" alt="Image of a Roller Coaster ride">
-                    <div class="div-on-hoover">
-                        <p class="text-on-hoover"><b>Roller Coaster:</b> The highly rated ride among the top rated rides.</p><br>
+
+            <ul class="nav-list">
+
+                <li class="nav-list-item hidden"><img src="assets/iconmonstr-time-3.svg" alt="clock" class="icon">open from 9am till 6pm</li>
+                <li class="nav-list-item hidden"><img src="assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
+                <li class="nav-list-item"><a href="index.html">home</a></li>
+                <li class="nav-list-item nav-attraction dropdown dropbtn">attractions
+                    <ul class="nav-list nav-sublist dropdown-content">
+
+                        <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">Swing Ride</a></li>
+                        <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">Roller Coaster</a></li>
+                        <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">Ferris Wheel</a></li>
+                        <li class="nav-list-item nav-sublist-item"><a href="content/attraction.html">More..</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-list-item disturber"><a href="content/tickets.html">buy tickets</a></li>
+                <!--Todo: Replace with a form? We'll not make it work in this project-->
+                <li class="nav-list-item">
+                    <a href="#"><img src="assets/iconmonstr-magnifier-4.svg" alt="search" class="icon">search</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#"><img src="assets/united-kingdom-flag-icon-64.png" alt="eng" class="language"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main area of the page-->
+    <main id="main-page">
+
+        <!-- First CSS area of the content page, divided using background image -->
+        <div class="first-section">
+
+            <!--parent div for the animation div -->
+            <div class="slider-div-parent">
+
+                <!-- div tag where the slidehshow animation is implemented -->
+                <div class="slider-div"></div><br>
+
+                <p class="index-slider-txt">Come hang with us for an 'Outta this World' experience!</p>
+            </div><br><br>
+
+            <!-- main attractions' area/ heading tag -->
+            <h1>Main Attractions</h1>
+
+            <!-- main attractions' index grid container -->
+            <div class="grid-container">
+
+                <!-- index grid area 1 -->
+                <div class="index-grid-ride">
+                    <div class="index-hover-parent">
+                        <img class="grid-index-image" src="assets/ride1-landing-page.jfif" alt="Image of Swing ride">
+
+                        <!-- this div is displayed on mobile and hidden by default on desktop, but will show on hover -->
+                        <div class="div-on-hoover">
+                            <p class="text-on-hoover"><b>Swing Ride:</b> The most popular ride we have at the park.</p><br>
+                        </div>
+
+                        <!-- a-tag taking you to the relevant attraction's page -->
+                        <a class="button-on-hoover button" href="content/attraction.html">View Swing Ride</a>
                     </div>
-                    <a class="button-on-hoover button" href="content/attraction.html">View Roller Coaster</a>
-                </div>
-            </div>
-            
-            <div class="index-grid-ride">
-                <div class="index-hover-parent">
-                    <img class="grid-index-image" src="assets/ride3-landing-page.jfif" alt="Image of a Ferris Wheel">
-                    <div class="div-on-hoover">
-                        <p class="text-on-hoover"><b>Ferris Wheel:</b> The king of all rides.</p><br>
+                </div> <!-- end of index grid area 1 -->
+
+                <!-- index grid area 2 -->
+                <div class="index-grid-ride">
+                    <div class="index-hover-parent">
+                        <img class="grid-index-image" src="assets/ride2-landing-page.jfif" alt="Image of a Roller Coaster ride">
+
+                        <!-- this div is displayed on mobile and hidden by default on desktop, but will show on hover -->
+                        <div class="div-on-hoover">
+                            <p class="text-on-hoover"><b>Roller Coaster:</b> The highly rated ride among the top rated rides.</p><br>
+                        </div>
+
+                        <!-- a-tag taking you to the relevant attraction's page -->
+                        <a class="button-on-hoover button" href="content/attraction.html">View Roller Coaster</a>
                     </div>
-                    <a class="button-on-hoover button" href="content/attraction.html">View Ferris Wheel</a>
-                </div>
+                </div> <!-- end of index grid area 1 -->
+
+                <!-- index grid area 3 -->
+                <div class="index-grid-ride">
+                    <div class="index-hover-parent">
+                        <img class="grid-index-image" src="assets/ride3-landing-page.jfif" alt="Image of a Ferris Wheel">
+
+                        <!-- this div is displayed on mobile and hidden by default on desktop, but will show on hover -->
+                        <div class="div-on-hoover">
+                            <p class="text-on-hoover"><b>Ferris Wheel:</b> The king of all rides.</p><br>
+                        </div>
+
+                        <!-- a-tag taking you to the relevant attraction's page -->
+                        <a class="button-on-hoover button" href="content/attraction.html">View Ferris Wheel</a>
+                    </div>
+                </div> <!-- end of index grid area 1 -->
+
+            </div> <!-- end of index grid container -->
+
+            <!-- a-tag within the div-tag, formated using an aside-tag -->
+            <aside class="aside">
+                <div class="aside-btn"><a href="content/tickets.html" class="nounderline button disturber">Book Now</a></div>
+                <div class="aside-btn"><a href="content/attraction.html" class="nounderline button disturber">View Attractions</a></div>
+            </aside>
+
+        </div> <!-- end of first CSS division area -->
+
+        <!-- Second CSS area of the content page, divided using background image -->
+        <div class="second-section"><br>
+            <h2>Here we are</h2>
+
+            <!-- park map div area -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21890.87291698331!2d0.2907042115935128!3d46.69864861730813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fd9870038258bb%3A0xc3657a532e1e504e!2s86380%20Vendeuvre-du-Poitou%2C%20France!5e0!3m2!1sen!2sca!4v1573682686807!5m2!1sen!2sca" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> <!-- end of secnd CSS division area -->
 
-        <aside class="aside">
-            <div class="aside-btn"><a href="content/tickets.html" class="nounderline button disturber">Book Now</a></div>
-            <div class="aside-btn"><a href="content/attraction.html" class="nounderline button disturber">View Attractions</a></div>
-        </aside>
-    </div>
-    
-    <!-- park map area -->
-    <div class="second-section"><br>
-        <h2>Here we are</h2>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21890.87291698331!2d0.2907042115935128!3d46.69864861730813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fd9870038258bb%3A0xc3657a532e1e504e!2s86380%20Vendeuvre-du-Poitou%2C%20France!5e0!3m2!1sen!2sca!4v1573682686807!5m2!1sen!2sca" allowfullscreen></iframe>
-        </div>
-    </div>
+    </main> <!-- end of main page contents -->
 
-</main>
 
-<!--footer section with nav parts, about us, social media-->
-    <footer >
+
+    <!--footer section with nav parts, about us, social media-->
+    <footer>
         <!-- make sure links of nav and icons are correct-->
         <div class="grid-container">
-        <div class="footer-section">
-            <!--content of navigation-->
-            
-            <ul class="footer-list">
-                <li class="footer-list-item text"><a href="index.html">overview</a></li>
-                <li class="footer-list-item text"><a href="content/tickets.html">tickets</a></li>
-                <li class="footer-list-item"><img src="assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
-                <li class="footer-list-item"><img src="assets/iconmonstr-time-3.svg" alt="clock" class="icon">daily open from 9am till 6pm</li>
-            </ul>
-        </div>
-        
-        <div class="footer-section">
-                <a href="index.html">
-                        <img src="assets/logo.svg" alt="logo" class="logo">
-                    </a>
-            <ul class="footer-list">
-                <li class="footer-list-item text"><a href="#">company</a></li>
-                <li class="footer-list-item text"><a href="#">career</a></li>
-                <li class="footer-list-item text"><a href="#">support & contact</a></li>
-            </ul>
-        </div>
+            <div class="footer-section">
+                <!--content of navigation-->
 
-        <!-- socialmedia icons for facebook, insta, twitter, youtube-->
-        <div class="footer-section">
-            <ul class="footer-list">
-                <li class="footer-list-item">
-                    <ul class="footer-list">
-                            <li class="footer-list-item"><a href="#"><img src="assets/iconmonstr-facebook-4.svg" alt="facebook" class="socialmedia-icon"></a></li>
-                            <li class="footer-list-item"><a href="#"><img src="assets/iconmonstr-instagram-14.svg" alt="instagram" class="socialmedia-icon"></a></li>            
-                    </ul>
-                </li>
-                <li class="footer-list-item">
-                    <ul class="footer-list">
-                        <li class="footer-list-item"><a href="#"><img src="assets/iconmonstr-twitter-4.svg" alt="twitter" class="socialmedia-icon"></a></li>
-                        <li class="footer-list-item"><a href="#"><img src="assets/iconmonstr-youtube-9.svg" alt="youtube" class="socialmedia-icon"></a></li>
-                    </ul>
-                </li>
-            </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item text"><a href="index.html">overview</a></li>
+                    <li class="footer-list-item text"><a href="content/tickets.html">tickets</a></li>
+                    <li class="footer-list-item"><img src="assets/iconmonstr-weather-8.svg" alt="weather" class="icon">weather sunny</li>
+                    <li class="footer-list-item"><img src="assets/iconmonstr-time-3.svg" alt="clock" class="icon">daily open from 9am till 6pm</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="logo" class="logo">
+                </a>
+                <ul class="footer-list">
+                    <li class="footer-list-item text"><a href="#">company</a></li>
+                    <li class="footer-list-item text"><a href="#">career</a></li>
+                    <li class="footer-list-item text"><a href="#">support & contact</a></li>
+                </ul>
+            </div>
+
+            <!-- socialmedia icons for facebook, insta, twitter, youtube-->
+            <div class="footer-section">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><img src="assets/iconmonstr-facebook-4.svg" alt="facebook" class="socialmedia-icon"></a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="assets/iconmonstr-instagram-14.svg" alt="instagram" class="socialmedia-icon"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-list-item">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#"><img src="assets/iconmonstr-twitter-4.svg" alt="twitter" class="socialmedia-icon"></a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#"><img src="assets/iconmonstr-youtube-9.svg" alt="youtube" class="socialmedia-icon"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
         <div class="clearfix"></div>
         <div class="impressum">
@@ -169,4 +209,6 @@
         </div>
 
     </footer>
-</body></html>
+</body>
+
+</html>

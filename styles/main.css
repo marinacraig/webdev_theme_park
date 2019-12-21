@@ -192,6 +192,7 @@ header, .impressum{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 .linked-button {
     min-width: 100%;
@@ -211,19 +212,38 @@ header, .impressum{
 }
 
 .grid-index-image {
+    margin-bottom: 1em;
+
     /* curved corners */
     border-radius: 40px 10px 10px 10px;
     -moz-border-radius: 40px 10px 10px 10px;
     -webkit-border-radius: 40px 10px 10px 10px;
 }
 
-
-
-.slider-div {
-    padding-top: 4em;
-    padding-bottom: 4em;
+.slider-div-parent {
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
+/* slider animation definition for the landing page */
+.slider-div {
+    animation-name: sliderImage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+
+/* keyframes animation definiton for the slider-div */
+@keyframes sliderImage {
+    0%   {background-image:url("../assets/landingpage-slider-image1.jpg"); background-size: cover; background-repeat: no-repeat; height: 100%; padding-top: 20%;} 
+    50%  {background-image:url("../assets/landingpage-slider-image2.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 100%; padding-top: 20%;}
+    100%   {background-image:url("../assets/landingpage-slider-image1.jpg"); background-size: cover; background-repeat: no-repeat; height: 100%; padding-top: 20%;}  
+}
+
+/* formatting and positioning for aside-tag and map-class */
 aside, .map {
     padding: 4em;
     display:flex;
@@ -236,10 +256,8 @@ aside, .map {
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: #1D0D2D;
+    background-color: rgb(6, 1, 12);
 }
-
-.aside-btn {margin: 2em;}
 
 
 /*attraction page*/
@@ -261,18 +279,29 @@ text-decoration:none;
     clear: both;
   }
 
+  .attraction-main-div {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
 
-/*ticket page*/
+
+/*purchase tickets page*/
 .tickets {
      padding: 1em;
      text-align: center;
 }
+
+/*centers the text which is being entered in the text boxes*/
  input {
      text-align: center;
 }
+
+/*centers the descriptional text for the various ticket options*/
  .options {
      text-align: center;
 }
+
+/*defines the layout for all tables on the page*/
  table.center, th, td {
      margin-left: auto;
      margin-right: auto;
@@ -282,6 +311,8 @@ text-decoration:none;
      border: 1px solid white;
      border-collapse: collapse;
 }
+
+/*defines the layout for the date selection box on the page*/
  .date-form {
      border: 5px solid #ffffff;
      margin-left: auto;
@@ -294,6 +325,8 @@ text-decoration:none;
      padding: 25px;
      border-radius: 0px;
 }
+
+/*defines the layout for the quantity selection box on the page*/
  .quantity-form {
      border: 5px solid #ffffff;
      margin-left: auto;
@@ -304,6 +337,8 @@ text-decoration:none;
      padding: 25px;
      border-radius: 0px;
 }
+
+/*defines the layout for the check-out form on the page*/
  .check-out-form {
      border: 5px solid #ffffff;
      margin-left: auto;
@@ -320,6 +355,7 @@ text-decoration:none;
      padding: 5px;
 }
 
+/*defines the layout for the "confirm purchase" button at the bottom of the page (width is being adjusted automatically)*/
  .purchasebtn {
      margin-top: 7.5px;
      background-color: #bd92dd;
@@ -331,10 +367,15 @@ text-decoration:none;
      cursor: pointer;
      font-size: 17px;
 }
+
+/*hover function settings for "confirm purchase" button*/
  .purchasebtn:hover {
      letter-spacing: 2px;
      transition: .6s ease;
 }
+
+/*some of the CSS for the modal below has been sourced from w3schools.com and has been modified to work with the check-out form*/
+/*layout settings for the modal which is being displayed when the form is not filled out entirely*/
  .modal {
      display: none;
      position: fixed;
@@ -348,6 +389,8 @@ text-decoration:none;
      background-color: rgb(0, 0, 0);
      background-color: rgba(0, 0, 0, 0.4);
 }
+
+/*layout settings for the text/content of the modal which is being displayed when the form is not filled out entirely*/
  .modal-content {
      background-color: #fefefe;
      color: #bd92dd;
@@ -356,12 +399,16 @@ text-decoration:none;
      border: 1px solid #888;
      width: 80%;
 }
+
+/*design for the X (close button) on the modal*/
  .close {
      color: #aaaaaa;
      float: right;
      font-size: 28px;
      font-weight: bold;
 }
+
+/*hover function for the X (close button) on the modal*/
  .close:hover, .close:focus {
      color: #000;
      text-decoration: none;
@@ -416,22 +463,32 @@ address {
 
 @media screen and (max-width: 640px) {
 
-    .index-slider-image {
+    .attraction-main-image {
         width: 100%;
         height: auto;
     }
 
+    /* grid images' positioning */
     .grid-index-image {
         width: 80%;
         height: auto;
         margin: auto 0;
         margin-left:auto;
         margin-right:auto; 
-        display:block;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .grid-index-image, .index-slider-image {
+    /* opacity adjustment, so all images would fit in with the space-park theme */
+    .grid-index-image, .attraction-main-image {
         opacity: 0.8;
+    }
+
+    .index-slider-txt {
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .index-grid-ride {
@@ -439,6 +496,7 @@ address {
         text-align: center;
     }
 
+    /* positioning and  */
     aside, .map {
         padding: 2em;
         display:flex;
@@ -451,6 +509,9 @@ address {
     }
 
     iframe {width: 80%; height: 300px;}
+
+    /* mobile margin for buttons within the aside-tag */
+    .aside-btn {margin: 2%;}
 
 }
 
@@ -502,11 +563,12 @@ address {
         padding-top: 2em;
     }
 
+    /* defining grid width within the page */
     .index-grid-ride {
         width: 80%;
     }
 
-    .index-slider-image, .grid-index-image {
+    .index-slider-image, .grid-index-image, .attraction-main-image {
         max-width: 100%;
         height: auto;
         opacity: 0.8;
@@ -517,6 +579,7 @@ address {
         box-shadow: 10px 10px 20px -8px rgba(240,221,240,1);
     }
     
+    /* image opacity will increase on hover, to visually make way for text display */
     .grid-index-image:hover {
         transition: 1s ease;
         opacity: 0.3;
@@ -527,26 +590,26 @@ address {
         opacity: 0.9;
     }
     
-    .index-slider-image {
+    .attraction-main-image {
         /* curved corners */
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
         -webkit-border-radius: 10px 10px 10px 10px;
         
+        /* centering the main image */
         margin-left:auto;
         margin-right:auto; 
         display:block;
     }
     
+    /* positioning the "hover over image to diplay text" */
     .index-hover-parent {
         position: relative;
     }
 
+    /* map width and height */
     iframe {width: 50%; height: 450px;}
 
-    .nav-hover-parent {
-        position: relative;
-    }
     
     /* hiding div to be displayed on mouse hover */
     .div-on-hoover {
@@ -574,7 +637,11 @@ address {
         transition: .6s ease;
     }
 
+    /* desktop margin for buttons within the aside-tag */
+    .aside-btn {margin: 3em;}
     
+
+    /* button definition */
     .button-on-hoover {
         border-radius: 5px;
         text-decoration: none;
@@ -582,7 +649,7 @@ address {
         transition: .6s ease;
     }
      
-    /* button animation */
+    /* button animation- expands on hover */
     .button:hover {
         letter-spacing: 1px;
         transition: .6s ease;
@@ -599,50 +666,58 @@ address {
         align-self: end;
     }
 }  /* end of @media screen and (min-width: 641px) */
-@media(min-width: 1000px) {
-    table.center,th,td {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        text-align: center;
-        border: 1px solid white;
-        border-collapse: collapse;
-        padding: 20px;
-   }
-    .date-form {
-        border: 5px solid #ffffff;
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        color: #ffffff;
-        background-color: #1c6ac6;
-        padding: 25px;
-        border-radius: 0px;
-   }
-    .quantity-form {
-        border: 5px solid #ffffff;
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-top: 50px;
-        color: #ffffff;
-        background-color: #1c6ac6;
-        padding: 25px;
-        border-radius: 0px;
-   }
-    .check-out-form{
-        border: 5px solid #ffffff;
-        margin-left: 250px;
-        margin-right: 250px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        line-height: 25px;
-        color: #ffffff;
-        background-color: #1c6ac6;
-        padding: 25px;
-        border-radius: 0px;
-        width: auto;
-        padding: 5px;
-   }
+
+
+/*layout settings for tickets page when viewing on desktop*/
+/*the minimum width is set at 1000px, otherwise the tables wouldn't scale properly when viewing the page on a larger screen*/
+ @media(min-width: 1000px) {
+    /*defines the layout for all tables on the page*/
+     table.center,th,td {
+         margin-top: 25px;
+         margin-bottom: 25px;
+         text-align: center;
+         border: 1px solid white;
+         border-collapse: collapse;
+         padding: 20px;
+    }
+    /*defines the layout for the date selection box on the page*/
+     .date-form {
+         border: 5px solid #ffffff;
+         margin-left: 250px;
+         margin-right: 250px;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         text-align: center;
+         color: #ffffff;
+         background-color: #1c6ac6;
+         padding: 25px;
+         border-radius: 0px;
+    }
+    /*defines the layout for the quantity selection box on the page*/
+     .quantity-form {
+         border: 5px solid #ffffff;
+         margin-left: 250px;
+         margin-right: 250px;
+         margin-top: 50px;
+         color: #ffffff;
+         background-color: #1c6ac6;
+         padding: 25px;
+         border-radius: 0px;
+    }
+    /*defines the layout for the check-out form on the page*/
+     .check-out-form{
+         border: 5px solid #ffffff;
+         margin-left: 250px;
+         margin-right: 250px;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         text-align: center;
+         line-height: 25px;
+         color: #ffffff;
+         background-color: #1c6ac6;
+         padding: 25px;
+         border-radius: 0px;
+         width: auto;
+         padding: 5px;
+    }
 }
