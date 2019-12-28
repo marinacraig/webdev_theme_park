@@ -459,14 +459,6 @@ footer {
     color: black;
 }
 
-footer a:hover {
-    color: #1C6AC6;
-}
-
-footer a:visited {
-    color: #BD92DD;
-}
-
 .footer-section{
     padding-bottom: 15px;
 }
@@ -487,6 +479,15 @@ footer a:visited {
 .footer-list .footer-list .footer-list-item{
     display: inline;
 }
+/* change font colors on user action*/
+footer a:hover {
+    color: #1C6AC6;
+}
+
+footer a:visited {
+    color: #BD92DD;
+}
+/*different styling for the bottom of the footer*/
 .impressum {
     text-align: center;
     padding: 10px 0 10px;

@@ -27,7 +27,7 @@ merge branches:
 git merge develop
 ```
 
-## licences  
+## references   
 pictures:  
 
 footer: icons downloaded from iconmonstr.com [license](https://iconmonstr.com/license/)
@@ -37,7 +37,7 @@ titles: [https://fonts.google.com/specimen/Righteous](https://fonts.google.com/s
 text: [https://fonts.google.com/specimen/ZCOOL+XiaoWei](https://fonts.google.com/specimen/ZCOOL+XiaoWei)  
 
 ## Responsibilities  
-**HTML**:
+**HTML & CSS**:
 
 Marlene: Header / Navigation  
 Marina: Head, Footer  
@@ -61,7 +61,7 @@ Grid: each person for his / her own part
 Mathew: PDF Documentation incl. wireframes  
 Marlene: wireframes upated     
 Maca: mock-up  
-Marina: logo  
+Marina: logo, validators (including bugfixes, team support)  
 
 ## URL on static page  
 [https://hub.coursera-apps.org/connect/sharedhvbzntqc](https://hub.coursera-apps.org/connect/sharedhvbzntqc)
