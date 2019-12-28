@@ -289,7 +289,10 @@ aside, .map {
 /*attraction page*/
 a.nounderline:link
 {
-text-decoration:none;
+    text-decoration:none;
+}
+ul.no-dot {
+    list-style-type: none;
 }
 
  .column {
@@ -769,4 +772,5 @@ address {
          width: auto;
          padding: 5px;
     }
+    
 }
