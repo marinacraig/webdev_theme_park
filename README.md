@@ -33,7 +33,7 @@ git merge develop
 [content](content): attraction.html, tickets.html  
 [mock-ups](mockups): color scheme  
 [styles](styles): main.css  
-[Space Park - Midterm Assignment.pdf](Space Park - Midterm Assignment.pdf): summary of teamwork  
+[Space Park - Midterm Assignment.pdf](Space\&nbsp;Park\&nbsp;-\&nbsp;Midterm\&nbsp;Assignment.pdf): summary of teamwork   -->
 [wireframes](wireframes): final and initials (of all submitted)  
 
 ## references   
