@@ -313,6 +313,10 @@ ul.no-dot {
     padding-bottom: 4em;
   }
 
+/*HTML tag center replaced with a div, has to be formatted with CSS */
+.center {
+    text-align: center;
+}
 
 /*purchase tickets page*/
 .tickets {

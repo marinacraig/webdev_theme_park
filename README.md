@@ -64,7 +64,8 @@ Colors:
 
 Grid: each person for his / her own part   
 
-**others**  
+**o
+thers**  
 Mathew: PDF Documentation incl. wireframes  
 Marlene: wireframes upated     
 Maca: mock-up  
