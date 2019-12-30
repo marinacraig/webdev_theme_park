@@ -44,7 +44,7 @@ fonts:
 titles: [https://fonts.google.com/specimen/Righteous](https://fonts.google.com/specimen/Righteous)  
 text: [https://fonts.google.com/specimen/ZCOOL+XiaoWei](https://fonts.google.com/specimen/ZCOOL+XiaoWei)  
 
-## Responsibilities  
+## responsibilities  
 **HTML & CSS**:  
 Marlene: Header / Navigation  
 Marina: Head, Footer  
@@ -64,7 +64,7 @@ Colors:
 
 Grid: each person for his / her own part   
 
-**Others**  
+**others**  
 Mathew: PDF Documentation incl. wireframes  
 Marlene: wireframes upated     
 Maca: mock-up  
